@@ -1,0 +1,51 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+
+<templ12> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <op>
+    ; co:lastItem <n>
+    ; co:item <c>, <phezulu> .
+
+<translZu> a mola:Dialect
+    ; mola:isFamily <isiZulu> .
+
+<op> a toct:Slot
+    ; toct:hasLabel "OP"^^xsd:string
+    ; co:nextItem <c> .
+
+<c> a toct:Slot
+    ; toct:hasLabel "C"^^xsd:string
+    ; co:nextItem <phezulu> .
+
+<phezulu> a toct:PolymorphicWord
+    ; toct:reliesOn <c>
+    ; co:firstItem <relC>
+    ; co:lastItem <phezulStem>
+    ; co:nextItem <n> .
+
+<relC> a toct:Concord
+    ; zutemp:hasConcordType <relConType>
+    ; toct:hasLabel "relCon"^^xsd:string
+    ; co:nextItem <phezulStem> .
+
+<phezulStem> a toct:Root
+    ; toct:hasValue "ngaphezulu"^^xsd:string .
+
+<n> a toct:PolymorphicWord
+    ; toct:reliesOn <c>
+    ; co:firstItem <kuka>
+    ; co:lastItem <nslot> .
+
+<kuka> a toct:UnimorphicAffix
+    ; toct:hasValue "kuka-"^^xsd:string
+    ; co:nextItem <nslot> .
+
+<nslot> a toct:Slot
+    ; toct:hasLabel "N"^^xsd:string .
+
+<relConType> a zutemp:RelativeConcord .

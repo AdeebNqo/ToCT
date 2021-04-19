@@ -1,0 +1,38 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+
+<templ10> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <op>
+    ; co:lastItem <odwapoly>
+    ; co:item <c> .
+
+<translZu> a mola:Dialect
+    ; mola:isFamily <isiZulu> .
+
+<op> a toct:Slot
+    ; toct:hasLabel "OP"^^xsd:string
+    ; co:nextItem <c> .
+
+<c> a toct:Slot
+    ; toct:hasLabel "C"^^xsd:string
+    ; co:nextItem <odwapoly> .
+
+<odwapoly> a toct:PolymorphicWord
+    ; toct:reliesOn <c>
+    ; co:firstItem <subjC>
+    ; co:lastItem <odwa> .
+
+<subjC> a toct:Concord
+    ; zutemp:hasConcordType <subjConType>
+    ; toct:hasLabel "subjCon"^^xsd:string
+    ; co:nextItem <odwa> .
+
+<odwa> a toct:Root
+    ; toct:hasValue "odwa"^^xsd:string .
+
+<subjConType> a zutemp:SubjectivalConcord .

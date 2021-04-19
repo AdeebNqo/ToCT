@@ -1,0 +1,382 @@
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#udokotela> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukuhlinza>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke udokotela uyingxenye ekuhlinzeni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ibhubesi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe lonke ibhubesi liyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuntu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#phuza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uketshezi>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umuntu uphuza uketshezi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukukhota_ukhilimu_oyiqhwa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isiqephu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukhilimu_oyiqhwa>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isampula_igazi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isiqephu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#igazi>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umphakathi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#hlanganyele> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukhetho>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umphakathi uhlanganyele ukhetho?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ibhubesi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#impala>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ibhubesi lidla impala?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlulamithi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ihlamvana>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke indlulamithi idla ihlamvana?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#impala> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke impala iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuntu> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#feza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umsebenzi_onqunyiwe>)))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ivazi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#akhiwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ubumba>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke ivazi yakhiwe ubumba?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#i-okhestra> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isazi_somnyuziki>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke i-okhestra linesazi somnyuziki?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ugogo> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#i-apula>)))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#akhiwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#itshe>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke indlu yakhiwe itshe?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ufulawa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isinkwa>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke ufulawa uyingxenye esinkweni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#igazi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#eeee> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isampula_igazi>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukuhlinza> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#udokotela>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe konke ukuhlinza kunodokotela?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isibhedlela> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dddd> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ithiyetha_yokuhlinzela>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe sonke isibhedlela sinethiyetha yokuhlinzela?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#okubomvu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umbala>)
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ihlamvana> ObjectAllValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isihlalo>))
+[OP] [C] [subjCon]odwa
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ihlamvana lingxenye isihlalo sodwa?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#amanzi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umshobingo>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe onke amanzi ayingxenye emshobingweni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#UMphathi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umsebenzi>)
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke ingwe iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukuhlinza> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#bbbb> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iqembu_labahlinzi>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe konke ukuhlinza kuneqembu labahlinzi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ixhiba> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dddd> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iziko>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ixhiba lineziko?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isinkwa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#eeee> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ucezu_isinkwa>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isifundo_sezibalo> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isifundo>)
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inhliziyo> ObjectMinCardinality(1 <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ifoni>))
+[OP] [C] [relCon]ngaphezulu kuka-[N]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke inhliziyo yenza ifoni elingaphezulu kuka-1?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ihebhu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuthi>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe lonke ihebhu lingumuthi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#imvilophu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#incwadi>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke imvilophu inencwadi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ucezu_isinkwa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isiqephu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isinkwa>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indilinga_yokudla> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ffff> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isisu>))
+[OP][Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke indilinga yokudla isesiswini?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ibhotela> ObjectExactCardinality(1 <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ifoni>))
+[OP] [C] [relCon]yi-[N] ncamashi
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ibhotela lenza ifoni eliyi-1 ncamashi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukusebenza> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#yawufeza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umsebenzi_onqunyiwe>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe konke ukusebenza kuyawufeza umsebenzi onqunyiwe?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umqondo_womshini> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ffff> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ikhompyutha>))
+[OP][Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umqondo womshini usekhompyutheni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukhetho> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#bbbb> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umphakathi>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ukhetho lunomphakathi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umshobingo> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#cccc> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#amanzi>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umshobingo unamanzi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlovu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke indlovu iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ikhambi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuthi>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe lonke ikhambi lingumuthi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuntu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inhliziyo>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umuntu unenhliziyo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukhilimu_oyiqhwa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#eeee> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukukhota_ukhilimu_oyiqhwa>))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuntu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isithelo>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umuntu udla isithelo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inkawu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke inkawu iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ivazi> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#akhiwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#amanzi>)))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iziko> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umunxa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ixhiba>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke iziko lumunxa ixhiba?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uSolwazi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#fundisa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isifundo>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke uSolwazi ufundisa isifundo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iphilisi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enziwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isitashi>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke iphilisi lenziwe isitashi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isifundo> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#fundiswa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uSolwazi>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe sonke isifundo sifundiswa uSolwazi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#incwadi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ffff> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#imvilophu>))
+[OP][Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke incwadi isemvilophini?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfundi_ongenaziqu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isifundo>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke umfundi ongenaziqu wenza isifundo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ithiyetha_yokuhlinzela> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umunxa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isibhedlela>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke ithiyetha yokuhlinzela umunxa isibhedlela?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isisu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indilinga_yokudla>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe sonke isisu sinendilinga yokudla?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukugwinya> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukudla>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe konke ukugwinya kuyingxenye ekudleni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iqembu_labahlinzi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#hlanganyele> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukuhlinza>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke iqembu labahlinzi lihlanganyele ukuhlinza?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isinkwa> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#cccc> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ufulawa>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe sonke isinkwa sinofulawa?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umakhalekhukhwini> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ifoni>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe wonke umakhalekhukhwini uyifoni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iphilisi> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enziwe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umshobingo>)))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uMnumzana> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iNgqungquthela>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke uMnumzana uyingxenye eNgqungqutheleni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ikhompyutha> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umqondo_womshini>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke ikhompyutha linomqondo womshini?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukubhukuda> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umdlalo>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe konke ukubhukuda kungumdlalo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukudla> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukugwinya>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe konke ukudla kunokugwinya?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inja> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke inja iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingwe> ObjectComplementOf(ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#i-apula>)))
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iNgqungquthela> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uMnumzana>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke iNgqungquthela inoMnumzana?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ubabekazi> ObjectMaxCardinality(1 <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#enza> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ifoni>))
+[OP] [C] [relCon]mbalwa ku-[N]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe wonke ubabekazi wenza ifoni elimbalwa ku-1?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlulamithi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isilwane>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe yonke indlulamithi iyisilwane?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isihlahla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuthi>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe sonke isihlahla singumuthi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inkawu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isithelo>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke inkawu idla isithelo?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isazi_somnyuziki> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#i-okhestra>))
+yi[OP] [Loc][C]ini
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe sonke isazi somnyuziki siyingxenye e-okhestreni?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iqembu_labahlinzi> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#aaaa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#udokotela>))
+[OP][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe lonke iqembu labahlinzi linodokotela?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlovu> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#dla> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ihlamvana>))
+[OP] [C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke indlovu idla ihlamvana?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfundi_ongenaziqu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfundi>)
+Ingabe [subjC]onke [C1] [subjC][COP][C2]?
+Ingabe wonke umfundi ongenaziqu ungumfundi?
+===
+SubClassOf(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inhliziyo> ObjectSomeValuesFrom(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingxenye> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umuntu>))
+yi[OP] [Loc][C]
+Ingabe [subjC]onke [C1] [subjC][C2]?
+Ingabe yonke inhliziyo iyingxenye kumuntu?
+===
+DataPropertyAssertion(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#neminyaka> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uZola> "50"^^xsd:int)
+Ingabe [I] [DP] [L]?
+Ingabe uZola neminyaka 50?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukugijima> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ukuhlala>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+akukho yini ukugijima okungukuhlala?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indoda> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfazi>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+alikho yini indoda elingumfazi?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umjondolo>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+ayikho yini indlu engumjondolo?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ubabekazi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umalume>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+awukho yini ubabekazi ungumalume?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ibhotela> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ushizi>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+alikho yini ibhotela elingushizi?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indebe> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ingilazi>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+ayikho yini indebe eyingilazi?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isipunu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfoloko>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+asikho yini isipunu esingumfoloko?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inyama> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfino>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+ayikho yini inyama engumfino?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ihebhivo> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ikhanivo>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+alikho yini ihebhivo eliyikhanivo?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#ibhubesi> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlovu>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+alikho yini ibhubesi eliyindlovu?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isihlalo> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#itafula>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+asikho yini isihlalo esiyitafula?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umfula> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umsele>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+awukho yini umfula ongumsele?
+===
+DisjointClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isidlanyama> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#isidlazitshalo>)
+a[subjCon]kho yini [C1] [relCon][COP][C2]?
+asikho yini isidlanyama esiyisidlazitshalo?
+===
+ObjectPropertyAssertion(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#fundisa> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iNokia_3310> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uZola>)
+[I1] [subjCon][OP] [I2]?
+iNokia 3310 lifundisa uZola?
+===
+EquivalentClasses(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indlu> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#inyama> )
+Ingabe noma yi[objCon]phi [C2] [relCon][COP][C1]?
+Ingabe noma yiyiphi indlu eyinyama?
+===
+ClassAssertion(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#umakhalekhukhwini> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#iNokia_3310>)
+Ingabe [I] [subjCon][COP][C]?
+Ingabe iNokia 3310 lingumakhalekhukhwini?
+===
+ClassAssertion(<http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#indoda> <http://www.semanticweb.org/mariakeet/ontologies/2016/10/untitled-ontology-315#uZola>)
+Ingabe [I] [subjCon][COP][C]?
+Ingabe uZola uyindoda?

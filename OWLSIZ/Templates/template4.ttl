@@ -1,0 +1,68 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+
+<templ4> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <ingabep>
+    ; co:lastItem <qmark>
+    ; co:item <yiphi>, <c2>, <c1poly> .
+
+<translZu> a mola:Dialect
+    ; mola:isFamily <isiZulu> .
+
+<ingabep> a toct:Phrase
+    ; toct:hasValue "Ingabe noma"^^xsd:string
+    ; co:nextItem <yiphi> .
+
+<yiphi> a toct:PolymorphicWord
+    ; toct:reliesOn <c2>
+    ; co:firstItem <yi>
+    ; co:lastItem <phi>
+    ; co:item <objC>
+    ; co:nextItem <c2> .
+
+<yi> a toct:UnimorphicAffix
+    ; toct:hasValue "yi"^^xsd:string
+    ; co:nextItem <objC> .
+
+<objC> a toct:Concord
+    ; toct:hasLabel "objCon"^^xsd:string
+    ; zutemp:hasConcordType <objConcType>
+    ; co:nextitem <phi> .
+
+<phi> a toct:UnimorphicAffix
+    ; toct:hasValue "phi"^^xsd:string .
+
+<c2> a toct:Slot
+    ; toct:hasLabel "C2"^^xsd:string
+    ; co:nextItem <c1poly> .
+
+<c1poly> a toct:PolymorphicWord
+    ; toct:reliesOn <c2>
+    ; co:firstItem <relC>
+    ; co:lastItem <c1>
+    ; co:item <cop> 
+    ; co:nextItem <qmark> .
+
+<relC> a toct:Concord
+    ; zutemp:hasConcordType <relConcType>
+    ; toct:hasLabel "relCon"^^xsd:string
+    ; co:nextItem <cop> .
+
+<cop> a toct:Copula
+    ; toct:hasLabel "COP"^^xsd:string
+    ; co:nextItem <c1> .
+
+<c1> a toct:Slot
+    ; toct:hasLabel "C1"^^xsd:string .
+
+<qmark> a toct:Punctuation
+    ; toct:hasValue "?"^^xsd:string .
+
+<relConcType> a zutemp:RelativeConcord .
+
+<objConcType> a zutemp:ObjectivalConcord .

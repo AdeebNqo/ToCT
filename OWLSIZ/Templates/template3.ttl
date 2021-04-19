@@ -1,0 +1,42 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+
+<templ3> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <i1>
+    ; co:lastItem <qmark>
+    ; co:item <opPoly>, <i2> .
+
+<translZu> a mola:Dialect
+    ; mola:isFamily <isiZulu> .
+
+<i1> a toct:Slot
+    ; toct:hasLabel "I1"^^xsd:string
+    ; co:nextItem <opPoly> .
+
+<opPoly> a toct:PolymorphicWord
+    ; toct:reliesOn <i1>
+    ; co:firstItem <subjC>
+    ; co:lastItem <op>
+    ; co:nextItem <i2> .
+
+<subjC> a toct:Concord
+    ; toct:hasLabel "subjCon"^^xsd:string
+    ; zutemp:hasConcordType <subjCConType>
+    ; co:nextItem <op> .
+
+<op> a toct:Slot
+    ; toct:hasLabel "OP"^^xsd:string .
+
+<i2> a toct:Slot
+    ; toct:hasLabel "I2"^^xsd:string
+    ; co:nextItem <qmark> .
+
+<qmark> a toct:Punctuation
+    ; toct:hasValue "?"^^xsd:string .
+
+<subjCConType> a zutemp:SubjectivalConcord .

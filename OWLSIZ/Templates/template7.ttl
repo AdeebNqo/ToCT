@@ -1,0 +1,26 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+
+<templ7> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <op>
+    ; co:lastItem <qmark>
+    ; co:item <i> .
+
+<translZu> a mola:Dialect
+    ; mola:isFamily <isiZulu> .
+
+<op> a toct:Slot
+    ; toct:hasLabel "OP"^^xsd:string
+    ; co:nextItem <i> .
+
+<i> a toct:Slot
+    ; toct:hasLabel "I"^^xsd:string
+    ; co:nextItem <qmark> .
+
+<qmark> a toct:Punctuation
+    ; toct:hasValue "?"^^xsd:String .
