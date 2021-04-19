@@ -1,0 +1,2 @@
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .

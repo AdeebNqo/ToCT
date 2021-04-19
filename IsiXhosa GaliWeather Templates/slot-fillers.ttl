@@ -1,0 +1,547 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<ayinyukisihla> a toct:Phrase
+    ; co:firstItem <ayizokunyuka>
+    ; co:lastItem <isehla> 
+    ; toct:fillsIn <oscilationSlot>
+    ; toct:fillsIn <minOscilationSlot>
+    ; toct:fillsIn <maxOscilationSlot> .
+
+<izakunyukaisihla> a toct:Phrase
+    ; co:firstItem <izakunyuka>
+    ; co:lastItem <isehla> 
+    ; toct:fillsIn <oscilationSlot>
+    ; toct:fillsIn <minOscilationSlot>
+    ; toct:fillsIn <maxOscilationSlot> .
+
+<lihlakakhulu> a toct:Phrase
+    ; co:firstItem <lihla>
+    ; co:lastItem <khulu>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<lihlancincincinci> a toct:Phrase
+    ; co:firstItem <lihla>
+    ; co:lastItem <ncincincinci>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<lihlancinci> a toct:Phrase
+    ; co:firstItem <lihla>
+    ; co:lastItem <ncinci>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<linyukancinci> a toct:Phrase
+    ; co:firstItem <linyuka>
+    ; co:lastItem <ncinci>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<linyukancincincinci> a toct:Phrase
+    ; co:firstItem <linyuka>
+    ; co:lastItem <ncincincinci>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<linyukankhulu> a toct:Phrase
+    ; co:firstItem <linyuka>
+    ; co:lastItem <khulu>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<linyukanmandla> a toct:Phrase
+    ; co:firstItem <linyuka>
+    ; co:lastItem <mandla>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<lihlamandla> a toct:Phrase
+    ; co:firstItem <lihla>
+    ; co:lastItem <mandla>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<ekusondeleniphakathi> a toct:UnimorphicWord
+    ; toct:hasValue "esiphakathini"^^xsd:string
+    ; toct:fillsIn <periodSlot>
+    ; toct:fillsIn <period1Slot>
+    ; toct:fillsIn <period2Slot>
+    ; toct:fillsIn <period3Slot>
+    ; toct:fillsIn <period4Slot>
+    ; toct:fillsIn <period5Slot>
+    ; toct:fillsIn <period6Slot>
+    ; toct:fillsIn <period7Slot>
+    ; xhtemp:hasPOS <posLocNounType>
+    ; xhtemp:hasNounClass <nounClass7Type> 
+    ; toct:controls <possXesha> .
+
+<gqabagqaba> a toct:Phrase
+    ; toct:hasValue "elithe gqabagqaba ngamafu"^^xsd:string
+    ; toct:fillsIn <coverageSlot>
+    ; toct:fillsIn <coverage1Slot>
+    ; toct:fillsIn <coverage2Slot>
+    ; toct:fillsIn <coverage3Slot>
+    ; toct:fillsIn <coverage4Slot>
+    ; toct:fillsIn <coverage5Slot>
+    ; toct:fillsIn <coverage6Slot> .
+
+<amandlanorth> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emantla"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlanortheast> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emntla-mpuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlaeast> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka empuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlasoutheast> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emzantsi-mpuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlasouth> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emzantsi"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlasouthwest> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emzantsi-ntshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlawest> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka entshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlanorthwest> a toct:Phrase
+    ; toct:hasValue "amandla ukusuka emantla-ntshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulunorth> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emantla"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulunortheast> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emntla-mpuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulueast> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka empuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulusoutheast> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emzantsi-mpuma"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulusouth> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emzantsi"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulusouthwest> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emzantsi-ntshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhuluwest> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka entshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<amandlakhulunorthwest> a toct:Phrase
+    ; toct:hasValue "amandla amakhulu ukusuka emantla-ntshona"^^xsd:string
+    ; toct:fillsIn <windSlot>
+    ; toct:fillsIn <wind1Slot>
+    ; toct:fillsIn <wind2Slot>
+    ; toct:fillsIn <wind3Slot>
+    ; toct:fillsIn <wind4Slot> .
+
+<phantsikhulu> a toct:Phrase
+    ; co:firstItem <buphantsi>
+    ; co:lastItem <khulu>
+    ; toct:fillsIn <minimumTempSlot>
+    ; toct:fillsIn <maximumTempSlot>
+    ; toct:fillsIn <tempSlot> .
+
+<phezulukakhulu> a toct:Phrase
+    ; co:firstItem <buphezulu>
+    ; co:lastItem <khulu> 
+    ; toct:fillsIn <minimumTempSlot>
+    ; toct:fillsIn <maximumTempSlot>
+    ; toct:fillsIn <tempSlot> .
+
+
+
+
+
+
+
+
+
+<ayizokunyuka> a toct:PolymorphicWord
+    ; co:firstItem <azi>
+    ; co:lastItem <zonyoka> .
+
+<lihla> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <hla> .
+
+<linyuka> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <nyuka> .
+
+<alinatshintsho> a toct:PolymorphicWord
+    ; co:firstItem <azi>
+    ; co:lastItem  <natshintso>
+    ; toct:fillsIn <variationSlot>
+    ; toct:fillsIn <minimumVariationSlot>
+    ; toct:fillsIn <maxVariationSlot>
+    ; toct:fillsIn <norVariationSlot> .
+
+<isehla> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <sehla> .
+
+<izakunyuka> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <zanyuka> .
+
+<buqhelekile> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <qhelekile>
+    ; toct:fillsIn <minimumTempSlot>
+    ; toct:fillsIn <maximumTempSlot>
+    ; toct:fillsIn <tempSlot> .
+
+<buphezulu> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <phezulu>
+    ; toct:fillsIn <minimumTempSlot>
+    ; toct:fillsIn <maximumTempSlot>
+    ; toct:fillsIn <tempSlot> .
+
+<buphantsi> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <phantsi>
+    ; toct:fillsIn <minimumTempSlot>
+    ; toct:fillsIn <maximumTempSlot>
+    ; toct:fillsIn <tempSlot> .
+
+<iyeka> a toct:PolymorphicWord
+    ; co:firstItem <i>
+    ; co:lastItem <eka> .
+
+<ncincincinci> a toct:UnimorphicWord
+    ; toct:hasValue "kancinci-kancinci"^^xsd:string .
+
+<ncinci> a toct:UnimorphicWord
+    ; toct:hasValue "kancinci"^^xsd:string .
+
+<khulu> a toct:UnimorphicWord
+    ; toct:hasValue "kakhulu"^^xsd:string .
+
+<mandla> a toct:UnimorphicWord
+    ; toct:hasValue "ngamandla"^^xsd:string .
+
+<ekuseni> a toct:UnimorphicWord
+    ; toct:hasValue "ekuseni"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<emini> a toct:UnimorphicWord
+    ; toct:hasValue "emini"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<ebusuku> a toct:UnimorphicWord
+    ; toct:hasValue "ebusuku"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<ekuqaleni> a toct:UnimorphicWord
+    ; toct:hasValue "ekuqaleni"^^xsd:string
+    ; toct:fillsIn <periodSlot>
+    ; toct:fillsIn <period1Slot>
+    ; toct:fillsIn <period2Slot>
+    ; toct:fillsIn <period3Slot>
+    ; toct:fillsIn <period4Slot>
+    ; toct:fillsIn <period5Slot>
+    ; toct:fillsIn <period6Slot>
+    ; toct:fillsIn <period7Slot>
+    ; xhtemp:hasPOS <posLocNounTYpe>
+    ; xhtemp:hasNounClass <nounClass15Type>
+    ; toct:controls <possXesha> .
+
+<ekupheleni> a toct:UnimorphicWord
+    ; toct:hasValue "ekupheleni"^^xsd:string
+    ; toct:fillsIn <periodSlot>
+    ; toct:fillsIn <period1Slot>
+    ; toct:fillsIn <period2Slot>
+    ; toct:fillsIn <period3Slot>
+    ; toct:fillsIn <period4Slot>
+    ; toct:fillsIn <period5Slot>
+    ; toct:fillsIn <period6Slot>
+    ; toct:fillsIn <period7Slot>
+    ; xhtemp:hasPOS <posLocNounType>
+    ; xhtemp:hasNounClass <nounClass15Type>
+    ; toct:controls <possXesha> .
+
+<mvulo> a toct:UnimorphicWord
+    ; toct:hasValue "ngomvulo"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<lwesibini> a toct:UnimorphicWord
+    ; toct:hasValue "ngolwesibini"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<lwesithathu> a toct:UnimorphicWord
+    ; toct:hasValue "ngolwesithathu"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<lwesine> a toct:UnimorphicWord
+    ; toct:hasValue "ngolwesine"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<lwesihlanu> a toct:UnimorphicWord
+    ; toct:hasValue "ngolwesihlanu"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<mgqibelo> a toct:UnimorphicWord
+    ; toct:hasValue "ngomgqibelo"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<ngecawa> a toct:UnimorphicWord
+    ; toct:hasValue "ngecawa"^^xsd:string
+    ; toct:fillsIn <timeSlot>
+    ; toct:fillsIn <time1Slot>
+    ; toct:fillsIn <time2Slot>
+    ; toct:fillsIn <time3Slot>
+    ; toct:fillsIn <time4Slot>
+    ; toct:fillsIn <time5Slot> .
+
+<elihle> a toct:UnimorphicWord
+    ; toct:hasValue "elihle"^^xsd:string
+    ; toct:fillsIn <coverageSlot>
+    ; toct:fillsIn <coverage1Slot>
+    ; toct:fillsIn <coverage2Slot>
+    ; toct:fillsIn <coverage3Slot>
+    ; toct:fillsIn <coverage4Slot>
+    ; toct:fillsIn <coverage5Slot>
+    ; toct:fillsIn <coverage6Slot> .
+
+<elinkungu> a toct:UnimorphicWord
+    ; toct:hasValue "elimathumb' antaka"^^xsd:string
+    ; toct:fillsIn <coverageSlot>
+    ; toct:fillsIn <coverage1Slot>
+    ; toct:fillsIn <coverage2Slot>
+    ; toct:fillsIn <coverage3Slot>
+    ; toct:fillsIn <coverage4Slot>
+    ; toct:fillsIn <coverage5Slot>
+    ; toct:fillsIn <coverage6Slot> .
+
+<elisibakeleyo> a toct:UnimorphicWord
+    ; toct:hasValue "elisibakeleyo"^^xsd:string
+    ; toct:fillsIn <coverageSlot>
+    ; toct:fillsIn <coverage1Slot>
+    ; toct:fillsIn <coverage2Slot>
+    ; toct:fillsIn <coverage3Slot>
+    ; toct:fillsIn <coverage4Slot>
+    ; toct:fillsIn <coverage5Slot>
+    ; toct:fillsIn <coverage6Slot> .
+
+<zingisa> a toct:UnimorphicWord
+    ; toct:hasValue "zingisa"^^xsd:string .
+
+<yekhephu> a toct:UnimorphicWord
+    ; toct:hasValue "yekhephu"^^xsd:string .
+
+<nesiphango> a toct:UnimorphicWord
+    ; toct:hasValue "nesiphango"^^xsd:string .
+
+<yesichotho> a toct:UnimorphicWord
+    ; toct:hasValue "yesichotho"^^xsd:string .
+
+<emane> a toct:PolymorphicWord
+    ; co:firstItem <relC>
+    ; co:lastItem <mane> .
+
+
+
+
+<relC> a toct:Concord
+    ; toct:hasLabel "relC"^^xsd:string
+    ; xhtemp:hasConcordType <relConType> .
+
+<azi> a toct:Concord
+    ; toct:hasLabel "negSubjC"^^xsd:string
+    ; xhtemp:hasConcordType <negSubjConType>  .
+
+<i> a toct:Concord
+    ; toct:hasLabel "subjC"^^xsd:string
+    ; xhtemp:hasConcordType <subjConType> .
+
+<zonyoka> a toct:UnimorphicAffix
+    ; toct:hasValue "zokunyuka"^^xsd:string .
+
+<sehla> a toct:UnimorphicAffix
+    ; toct:hasValue "isehla"^^xsd:string .
+
+<zanyuka> a toct:UnimorphicAffix
+    ; toct:hasValue "zakunyuka"^^xsd:string .
+
+<natshintso> a toct:UnimorphicAffix
+    ; toct:hasValue "natshintsho"^^xsd:string .
+
+<nyuka> a toct:UnimorphicAffix
+    ; toct:hasValue "nyuka"^^xsd:string .
+
+<hla> a toct:UnimorphicAffix
+    ; toct:hasValue "hla"^^xsd:string .
+
+<phantsi> a toct:UnimorphicAffix
+    ; toct:hasValue "iphantsi"^^xsd:string .
+
+<qhelekile> a toct:UnimorphicAffix
+    ; toct:hasValue "qhelekile"^^xsd:string .
+
+<phezulu> a toct:UnimorphicAffix
+    ; toct:hasValue "iphezulu"^^xsd:string .
+
+<yeka> a toct:UnimorphicAffix
+    ; toct:hasValue "iyeka"^^xsd:string .
+
+<mane> a toct:UnimorphicAffix
+    ; toct:hasValue "imane"^^xsd:string .
+
+
+
+
+<posNounType> a xhtemp:LocativeNoun .
+<posLocNounType> a xhtemp:LocativeNoun .
+<nounClass15Type> a xhtemp:NounClass15 .
+<nounClass7Type> a xhtemp:NounClass7 .
+
+<relConType> a xhtemp:RelativeConcord .
+<negSubjConType> a xhtemp:NegativeSubjectivalConcord .
+<subjConType> a xhtemp:SubjectivalConcord .

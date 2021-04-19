@@ -1,0 +1,101 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<temp5Template> a toct:Template
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <phantsi>, <minimumTempSlot>, <kwaye1>, <qondo2>, <phezulu1>, <maximumTempSlot>, <thelekiswa>, <comma>, <kwaye2>, <amaqondo>, <phezulu2>, <maxVariationSlot>
+    ; co:firstItem <qondo1>
+    ; co:lastItem <hambaxesha> .
+
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .
+
+<qondo1> a toct:UnimorphicWord
+    ; toct:hasValue "Iqondo"^^xsd:string
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <phantsi>
+    ; toct:controls <i>
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass5Type> .
+
+<phantsi> a toct:Phrase
+    ; toct:hasValue "eliphantsi lemozulu"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger
+    ; co:nextItem <minimumTempSlot> .
+
+<minimumTempSlot> a toct:Slot
+    ; toct:hasLabel "minT"^^xsd:string
+    ; toct:reliesOn <qondo1>
+    ; co:index "3"^^xsd:positiveInteger
+    ; co:nextItem <kwaye1> .
+
+<kwaye1> a toct:UnimorphicWord
+    ; toct:hasValue "kwaye"^^xsd:string
+    ; co:index "4"^^xsd:positiveInteger
+    ; co:nextItem <qondo2> .
+
+<qondo2> a toct:UnimorphicWord
+    ; toct:hasValue "iqondo"^^xsd:string
+    ; co:index "5"^^xsd:string
+    ; co:nextItem <phezulu1>
+    ; toct:controls <i>
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass5Type> .
+
+<phezulu1> a toct:UnimorphicWord
+    ; toct:hasValue "eliphezulu"^^xsd:string
+    ; co:index "6"^^xsd:positiveInteger
+    ; co:nextItem <maximumTempSlot> .
+
+<maximumTempSlot> a toct:Slot
+    ; toct:hasLabel "maxT"^^xsd:string
+    ; toct:reliesOn <qondo2>
+    ; co:index "7"^^xsd:positiveInteger
+    ; co:nextItem <thelekiswa> .
+
+<thelekiswa> a toct:Phrase
+    ; toct:hasValue "xa lithelekiswa nethemprisha elindelekileyo kwelixesha enyakeni"^^xsd:string
+    ; co:index "8"^^xsd:positiveInteger
+    ; co:nextItem <comma> .
+
+<comma> a toct:Punctuation
+    ; toct:hasValue ", "^^xsd:string
+    ; co:index "9"^^xsd:positiveInteger
+    ; co:nextItem <kwaye2> .
+
+<kwaye2> a toct:UnimorphicWord
+    ; toct:hasValue "kwaye"^^xsd:string
+    ; co:index "10"^^xsd:positiveInteger
+    ; co:nextItem <amaqondo> .
+
+<amaqondo> a toct:UnimorphicWord
+    ; toct:hasValue "iqondo"^^xsd:string
+    ; co:index "11"^^xsd:positiveInteger
+    ; co:nextItem <phezulu2>
+    ; toct:controls <azi>
+    ; toct:controls <i>
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass5Type> .
+
+<phezulu2> a toct:UnimorphicWord
+    ; toct:hasValue "eliphezulu"^^xsd:string
+    ; co:index "12"^^xsd:positiveInteger
+    ; co:nextItem <maxVariationSlot> .
+
+<maxVariationSlot> a toct:Slot
+    ; toct:hasLabel "maxV"^^xsd:string
+    ; toct:reliesOn <amaqondo>
+    ; co:index "13"^^xsd:positiveInteger
+    ; co:nextItem <hambaxesha> .
+
+<hambaxesha> a toct:Phrase
+         ; toct:hasValue "ekuhambeni kwexesha"^^xsd:string
+         ; co:index "14"^^xsd:positiveInteger .
+
+<posNounType> a xhtemp:Noun .
+
+<nounClass5Type> a xhtemp:NounClass5 .

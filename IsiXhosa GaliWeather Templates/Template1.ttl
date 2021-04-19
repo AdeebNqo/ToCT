@@ -1,0 +1,93 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<cloud1Template> a toct:Template
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <zulu>, <coverage1Slot>, <period1Slot>, <comma>, <coverage2Slot>, <period2Slot>, <kunye>, <coverage3>, <period3Slot>
+    ; co:firstItem <bakho>
+    ; co:lastItem <xesha> .
+
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .
+
+<bakho> a toct:UnimorphicWord
+    ; toct:hasValue "Kuzakubakho"^^xsd:string
+    ; co:index "1"^^xsd:string
+    ; co:nextItem <zulu> .
+
+<zulu> a toct:UnimorphicWord
+    ; toct:hasValue "izulu"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger
+    ; co:nextItem <coverage1Slot> .
+
+<coverage1Slot> a toct:Slot 
+    ; toct:hasLabel "cl1"^^xsd:string
+    ; co:index "3"^^xsd:positiveInteger
+    ; co:nextItem <period1Slot> .
+
+<period1Slot> a toct:Slot
+    ; toct:hasLabel "p1"^^xsd:string
+    ; co:index "4"^^xsd:positiveInteger
+    ; co:nextItem <comma> .
+
+<comma> a toct:Punctuation
+    ; toct:hasValue ", "^^xsd:string
+    ; co:index "5"^^xsd:psitiveInteger
+    ; co:nextItem  <coverage2Slot> .
+
+<coverage2Slot> a toct:Slot
+    ; toct:hasLabel "cl2"^^xsd:string
+    ; co:index "6"^^xsd:positiveInteger
+    ; co:nextItem <period2Slot> .
+
+<period2Slot> a toct:Slot
+    ; toct:hasLabel "p2"^^xsd:string
+    ; co:index "7"^^xsd:positiveInteger
+    ; co:nextItem <kunye> .
+
+<kunye> a toct:UnimorphicWord
+    ; toct:hasValue "kunye"
+    ; co:index "8"^^xsd:positiveInteger
+    ; co:nextItem <coverage3> .
+
+<coverage3> a toct:PolymorphicWord
+    ; co:index "9"^^xsd:positiveInteger;
+    ; co:item <na>, <coverage3Slot>
+    ; co:firstItem <na>
+    ; co:lastItem <coverage3Slot>
+    ; co:nextItem <period3Slot> .
+
+<na> a toct:UnimorphicAffix
+    ; toct:hasValue "na"^^xsd:string
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <coverage3Slot> .
+
+<coverage3Slot> a toct:Slot
+    ; toct:hasLabel "cl3"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger .
+
+<period3Slot> a toct:Slot
+    ; toct:hasLabel "p3"^^xsd:string
+    ; co:index "10"^^xsd:positiveInteger
+    ; co:nextItem <xesha> .
+
+<xesha> a toct:PolymorphicWord
+    ; toct:reliesOn <period3Slot>
+	; co:firstItem <possXesha>
+	; co:lastItem <ministem> .
+
+<possXesha> a toct:Concord
+	; toct:hasLabel "possC"^^xsd:string
+	; co:index "1"^^xsd:positiveInteger
+    ; xhtemp:hasConcordType <possConType>
+	; co:nextItem <ministem> .
+
+<ministem> a toct:Root
+	; toct:hasValue "imini"^^xsd:string
+	; co:index "2"^^xsd:positiveInteger .
+
+<possConType> a xhtemp:PossessiveConcord .

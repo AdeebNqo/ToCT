@@ -1,0 +1,93 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+
+<temp2Template> a toct:Template
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <qondo1>, <phantsi>, <minimumTempSlot>, <kwaye>, <qondo2>, <phezulu>, <maximumTempSlot>, <thelekiswa>, <comma>, <kodwa>, <temp>, <variationSlot>, <oscilationSlot>
+    ; co:firstItem <qondo1>
+    ; co:lastItem <oscilationSlot> .
+
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .
+
+<qondo1> a toct:UnimorphicWord
+    ; toct:hasValue "Iqondo"^^xsd:string
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <phantsi>
+    ; toct:controls <i>
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass5Type> .
+
+<phantsi> a toct:Phrase
+    ; toct:hasValue  "eliphantsi lemozulu"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger
+    ; co:nextItem <minimumTempSlot> .
+
+<minimumTempSlot> a toct:Slot
+    ; toct:hasLabel "minT"^^xsd:string
+    ; toct:reliesOn <qondo1>
+    ; co:index "3"^^xsd:positiveInteger
+    ; co:nextItem <kwaye> .
+
+<kwaye> a toct:UnimorphicWord
+    ; toct:hasValue "kwaye"^^xsd:string
+    ; co:index "4"^^xsd:positiveInteger
+    ; co:nextItem <qondo2> .
+
+<qondo2> a toct:UnimorphicWord
+    ; toct:hasValue "neqondo"^^xsd:string
+    ; co:index "5"^^xsd:positiveInteger
+    ; co:nextItem <phezulu>
+    ; toct:controls <i>
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass5Type> .
+
+<phezulu> a toct:UnimorphicWord
+    ; toct:hasValue "eliphezulu"^^xsd:string
+    ; co:index "6"^^xsd:positiveInteger
+    ; co:nextItem <maximumTempSlot> .
+
+<maximumTempSlot> a toct:Slot
+    ; toct:hasLabel "maxT"^^xsd:string
+    ; toct:reliesOn <qondo2>
+    ; co:index "7"^^xsd:positiveInteger
+    ; co:nextItem <thelekiswa> .
+
+<thelekiswa> a toct:Phrase
+    ; toct:hasValue "xa lithelekiswa netempritsha elindelekileyo kwelixesha enyakeni"^^xsd:string
+    ; co:index "8"^^xsd:positiveInteger
+    ; co:nextItem <comma> .
+
+<comma> a toct:Punctuation
+    ; toct:hasValue ", "^^xsd:string
+    ; co:index "9"^^xsd:positiveInteger
+    ; co:nextItem <kodwa> .
+
+<kodwa> a toct:Phrase
+    ; toct:hasValue "kodwa ndawo yonke"^^xsd:string
+    ; co:index "10"^^xsd:positiveInteger
+    ; co:nextItem <temp> .
+
+<temp> a toct:UnimorphicWord
+    ; toct:hasValue "itemprisha"^^xsd:string
+    ; co:index "12"^^xsd:positiveInteger
+    ; co:nextItem <oscilationSlot>
+    ; toct:controls <azi>
+    ; toct:controls <i> 
+    ; xhtemp:hasPOS <posNounType>
+    ; xhtemp:hasNounClass <nounClass9Type> .
+
+<oscilationSlot> a toct:Slot
+    ; toct:hasLabel "norO"^^xsd:positiveInteger
+    ; toct:reliesOn <temp>
+    ; co:index "13"^^xsd:positiveInteger .
+
+
+<posNounType> a xhtemp:Noun .
+<nounClass9Type> a xhtemp:NounClass9 .
+<nounClass5Type> a xhtemp:NounClass5 .

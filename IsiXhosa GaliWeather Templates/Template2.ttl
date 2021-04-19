@@ -1,0 +1,29 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<cloud2Template> a toct:Template;
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <bakho>, <coverageSlot>, <xesha>
+    ; co:firstItem <bakho>
+    ; co:lastItem <xesha> .
+
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .
+
+<bakho> a toct:Phrase
+    ; toct:hasValue "Kuzakubakho izulu"
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <coverageSlot> .
+
+<coverageSlot> a toct:Slot
+    ; toct:hasLabel "cl1"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger
+    ; co:nextItem <xesha> .
+
+<xesha> a toct:Phrase
+    ; toct:hasValue "jikelele imini yonke"
+    ; co:index "3"^^xsd:positiveInteger .

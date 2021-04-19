@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#">
+    <Prefix name="" IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Class1a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class3a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class9a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NominalClassification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class16"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class18"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="POW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class22"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NegativeSubjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class12"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class14"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RelativeConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="POS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class20"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Noun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PossessiveConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ShortAdjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LocativeNoun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class19"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SubjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class15"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class17"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhiMbiConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class11"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class23"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NounClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class13"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasConcordType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNounClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Class21"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LongAdjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AdjectivalConcord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Concord"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Class1"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class10"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class11"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class12"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class13"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class14"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class15"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class16"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class17"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class18"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class19"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class1a"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class2"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class20"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class21"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class22"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class23"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class2a"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class2b"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class3"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class3a"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class4"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class5"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class6"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class7"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class8"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class9"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Class9a"/>
+        <Class IRI="NounClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NounClass"/>
+        <Class IRI="NominalClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdjectivalConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Concord"/>
+        <Class IRI="POW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LocativeNoun"/>
+        <Class IRI="Noun"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LongAdjectivalConcord"/>
+        <Class IRI="AdjectivalConcord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NegativeSubjectivalConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Noun"/>
+        <Class IRI="POS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObjectivalConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhiMbiConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PossessiveConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RelativeConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ShortAdjectivalConcord"/>
+        <Class IRI="AdjectivalConcord"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SubjectivalConcord"/>
+        <Class IRI="Concord"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="AdjectivalConcord"/>
+        <Class IRI="ObjectivalConcord"/>
+        <Class IRI="PhiMbiConcord"/>
+        <Class IRI="PossessiveConcord"/>
+        <Class IRI="RelativeConcord"/>
+        <Class IRI="SubjectivalConcord"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="LongAdjectivalConcord"/>
+        <Class IRI="ShortAdjectivalConcord"/>
+    </DisjointClasses>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasConcordType"/>
+        <Class IRI="Concord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNounClass"/>
+        <Class IRI="NounClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPOS"/>
+        <Class IRI="POS"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>POS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Part of speech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>POW</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Part of word</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

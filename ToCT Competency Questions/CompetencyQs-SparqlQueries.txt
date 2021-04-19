@@ -1,0 +1,119 @@
+1. How many fixed phrasal and lexical segments does [template] have?
+
+SELECT distinct ?template (count(?unimorph) as ?numUnimorphWords) (count(?phrase) as ?numFixedPhrases) ((?numUnimorphWords + ?numFixedPhrases) as ?totalFixedParts)
+WHERE {
+	{
+	?template a toct:Template .
+	}
+	UNION
+	{
+	?template co:item ?unimorph .
+	?unimorph a toct:UnimorphicWord .
+	}
+	UNION
+	{
+	?template co:item ?phrase .
+	?phrase a toct:Phrase .
+	filter not exists { ?phrase toct:hasValue "" } .
+	}
+}
+GROUP BY ?template
+
+
+2. How many words that depend on others does [template] have?
+
+SELECT distinct ?template (count(distinct ?polymorph) as ?totalWordsThatDependOnOthers)
+WHERE {
+	?template a toct:Template .
+	?polymorph a toct:PolymorphicWord .
+	?template co:item ?polymorph .
+}
+GROUP BY ?template
+
+3. Which properties may result in a change form between [word1] and [word2] where there exists a dependency?
+
+SELECT ?word1 ?word2 ?propType
+WHERE {
+	?word1 a toct:UnimorphicWord .
+	?word2 a toct:PolymorphicWord .
+	?conc a toct:Concord .
+	?word2 co:item ?conc .
+	?word1 toct:controls ?conc .
+	?word1 toct:labeledWith ?prop .
+	?label a ?propType .
+	?propType rdfs:subClassOf toct:PropertyClass .
+}
+
+
+4. If there is a dependency between [word] and [word], which word is the governor?
+
+SELECT ?governor ?word
+WHERE {
+	?governor a toct:UnimorphicWord .
+	?word a toct:PolymorphicWord .
+	?conc a toct:Concord .
+	?word co:item ?conc .
+	?governor toct:controls ?conc .
+}
+
+
+5. Does [word] have a constant base form?
+
+SELECT distinct ?wordWithConstantBase
+WHERE {
+	?wordWithConstantBase a toct:PolymorphicWord .
+	?root a toct:Root .
+	?wordWithConstantBase co:item ?root .
+}
+
+6. Which grammar rule will be activated when forming [word] if its dependenton another word?
+
+Not in scope.
+
+7. Can [word] ever be placed in [slot]?
+
+SELECT ?wordThatCanFillSlot ?slot
+WHERE {
+	?wordThatCanFillSlot a toct:Word .
+	?slot a toct:Slot .
+	?wordThatCanFillSlot toct:fillsIn ?slot .
+}
+
+8.1. Can the word ordering in [template] exist without the template?
+
+NO SPARQL
+
+8.2. Can the word portion's ordering in [word] exist without the word?
+
+NO SPARQL
+
+9. Which words use [grammar rule]?
+
+Not in scope
+
+10. Is [template] grammar-infused?
+
+Not in scope.
+
+11. How many slots does [template] have?
+
+SELECT ?template (count(?slot) as ?slotCount)
+WHERE {
+	?template a toct:Template .
+	?slot a toct:Slot .
+	?template co:item ?slot .
+}
+GROUP BY ?template
+
+12. How many fixed segments have more than one word?
+
+SELECT distinct ?template (count(?phrase) as ?NumFixedSegmentsMoreThanOneWord)
+WHERE { 
+	?template a toct:Template .
+	?phrase toct:memberOf ?template .
+}
+GROUP BY ?template
+
+13. For each [word], in what order are its associated grammar rules applied,if at all?
+
+Not in scope.

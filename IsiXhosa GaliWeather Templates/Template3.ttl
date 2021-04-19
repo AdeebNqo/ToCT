@@ -1,0 +1,87 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mola: <https://ontology.londisizwe.org/mola#> .
+@prefix co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<cloud3Template> a toct:Template
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <coverage4Slot>, <period4Slot>, <period5>, <xesha>, <nangona>, <jika>, <period6Slot>
+    ; co:firstItem <bakho> 
+    ; co:lastItem <period6Slot> .
+
+<cpt_xhosa> a mola:Dialect
+    ; mola:isFamily <isiXhosa> .
+
+<bakho> a toct:Phrase
+    ; toct:hasValue "Kuzakubakho izulu"^^xsd:string
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <coverage4Slot> .
+
+<coverage4Slot> a toct:Slot
+    ; toct:hasLabel "cl4"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger
+    ; co:nextItem <period4Slot> .
+
+<period4Slot> a toct:Slot
+    ; toct:hasLabel "p4"^^xsd:string
+    ; co:index "3"^^xsd:positiveInger
+    ; co:nextItem <period5> .
+
+<period5> a toct:PolymorphicWord
+    ; co:index "4"^^xsd:positiveInteger
+    ; co:firstItem <na>
+    ; co:lastItem <period5Slot>
+    ; co:nextItem <xesha> .
+
+<na> a toct:UnimorphicAffix
+    ; toct:hasValue "nase"^^xsd:string
+    ; co:index "1"^^xsd:positiveInteger
+    ; co:nextItem <period5Slot> .
+
+<period5Slot> a toct:Slot
+    ; toct:hasLabel "p5"^^xsd:string
+    ; co:index "2"^^xsd:positiveInteger .
+
+<xesha> a toct:PolymorphicWord
+    ; toct:reliesOn <period5Slot>
+	; co:firstItem <possXesha>
+	; co:lastItem <ministem>
+	; co:nextItem <comma> .
+
+<possXesha> a toct:Concord
+	; toct:hasLabel "possC"^^xsd:string
+	; co:index "1"^^xsd:positiveInteger
+    ; xhtemp:hasConcordType <possConType>
+	; co:nextItem <ministem> .
+
+<ministem> a toct:Root
+	; toct:hasValue "imini"^^xsd:string
+	; co:index "2"^^xsd:positiveInteger .
+
+<comma> a toct:Punctuation
+    ; co:index "6"^^xsd:positiveInteger
+    ; toct:hasValue ", "^^xsd:string
+    ; co:nextItem <nangona> .
+
+<nangona> a toct:UnimorphicWord
+    ; toct:hasValue "nangona"^^xsd:string
+    ; co:index "7"^^xsd:positiveInteger
+    ; co:nextItem <jika> .
+
+<jika> a toct:Phrase
+    ; toct:hasValue "liyakujika kubekho"
+    ; co:index "8"^^xsd:positiveInteger
+    ; co:nextItem <coverage5Slot> .
+
+<coverage5Slot> a toct:Slot
+    ; toct:hasLabel "cl5"^^xsd:string
+    ; co:index "10"^^xsd:positiveInteger
+    ; co:nextItem <period6Slot> .
+
+ <period6Slot> a toct:Slot
+     ; toct:hasLabel "p6"
+     ; co:index "9"^^xsd:positiveInteger .
+
+<possConType> a xhtemp:PossessiveConcord .

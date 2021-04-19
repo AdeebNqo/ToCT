@@ -1,0 +1,52 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/test/> .
+@prefix  toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GrammarInfusedTemplateModel#> .
+@prefix  mola: <https://ontology.londisizwe.org/mola#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  co: <http://purl.org/co#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<sadjectTemplate> a toct:Template
+    ; co:firstItem <noun3Slot>
+    ; co:lastItem <old>
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <noun3Slot>, <old> .
+
+<cpt_xhosa> a mola:Dialect
+	; mola:isFamily <isiXhosa> .
+
+<noun3Slot> a toct:Slot
+	; co:index "1"^^xsd:positiveInteger
+	; toct:labeledWith <posNounType>
+	; toct:hasLabel "noun3Slot"^^xsd:string
+	; co:nextItem <old> .
+
+<old> a toct:PolymorphicWord
+	; co:index "2"^^xsd:positiveInteger
+	; co:firstItem <SAdjC>
+	; co:lastItem <fv>
+	; toct:reliesOn <noun3Slot>
+	; co:item <SAdjC>, <oldRoot>, <fv> .
+
+<SAdjC> a toct:Concord
+	; co:index "1"^^xsd:positiveInteger
+	; xhtemp:hasConcordType <shortAdjConType>
+	; toct:hasLabel "SAdj"^^xsd:string
+	; toct:dependsOn <noun3Slot>
+	; co:nextItem <oldRoot> .
+
+<oldRoot> a toct:Root
+	; co:index "2"^^xsd:positiveInteger
+	; toct:hasValue "dal"^^xsd:string
+	; co:nextItem <fv> .
+
+<fv> a toct:UnimorphicAffix
+    ; co:index "3"^^xsd:positiveInteger
+    ; toct:hasValue "a"^^xsd:string .
+
+<shortAdjConType> a xhtemp:ShortAdjectivalConcord .
+
+<posNounType> a xhtemp:Noun .

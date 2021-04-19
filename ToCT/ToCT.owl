@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#"
+     xml:base="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#">
+        <owl:imports rdf:resource="http://purl.org/co"/>
+        <owl:imports rdf:resource="https://ontology.londisizwe.org/mola#"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C. Maria Keet</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zola Mahlaza</terms:creator>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toct</vann:preferredNamespacePrefix>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An application ontology for the creation of morphologicaly-rich simple templates</terms:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Task ontology for CNL Templates</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/co/item -->
+
+    <rdf:Description rdf:about="http://purl.org/co/item">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/co/itemOf -->
+
+    <rdf:Description rdf:about="http://purl.org/co/itemOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controlledBy -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controlledBy">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controls"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord"/>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controls -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controls">
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#filledBy -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#filledBy">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/item"/>
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#labeledWith -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#labeledWith">
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PropertyClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/itemOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#reliesOn -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#reliesOn">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#reliesUponBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#reliesUponBy -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#reliesUponBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#supportsLanguage -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#supportsLanguage">
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
+        <rdfs:range rdf:resource="https://ontology.londisizwe.org/mola#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasLabel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Punctuation"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ontology.londisizwe.org/mola#Language -->
+
+    <owl:Class rdf:about="https://ontology.londisizwe.org/mola#Language"/>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix"/>
+        </owl:disjointUnionOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affix chunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controlledBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controlledBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phrase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polymorphic word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PropertyClass -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PropertyClass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Punctuation -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Punctuation"/>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#filledBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#filledBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#filledBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space"/>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Template</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#labeledWith"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PropertyClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Punctuation"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
+        </owl:disjointUnionOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Template portion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicAffix">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimorphic affix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controls"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Concord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#fillsIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimorphic word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
+        </owl:disjointUnionOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion -->
+
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root"/>
+        </owl:disjointUnionOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word portion</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
