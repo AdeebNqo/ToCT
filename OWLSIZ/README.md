@@ -5,7 +5,7 @@ OWL Simplified isiZulu (OWLSIZ) is an isiZulu controlled natural language. It is
 # What's in here
 
 - Numbered list of all the texts used the OWLSIZ evaluation (**NumberedEvaluatedTexts.tsv**)
-- The verbaliser's input, chosen template for each input, and the generated text output (**VerbaliserInputOutput.txt**)
+- Quick access to examples of verbaliser's input, chosen template for each input, and the generated text output (**VerbaliserInputOutput.txt**)
 
 # More details
 
