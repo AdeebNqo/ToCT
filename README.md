@@ -1,4 +1,4 @@
-# Task ontology for CNL-based Tempaltes
+# Task ontology for CNL-based Templates
 
 ## Introduction
 
