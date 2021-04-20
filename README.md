@@ -10,6 +10,8 @@ The conceptual model for the task ontology for template specifications is as fol
 
 ![Conceptual model](/ToCT/ConceptualModel.png)
 
+This was subsequently formalised into OWL as a task ontology. This ontology was used in two evaluation: one for ontology verbalisation in the form of validation quesions in isiZulu (Tbox only) and one for data-to-text generation of weather forcast messages in isiXhosa.
+
 ## People
 
 
@@ -19,6 +21,10 @@ The conceptual model for the task ontology for template specifications is as fol
 ## Licence
 
 CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+## Citing ToCT
+
+Mahlaza, Z., Keet, C.M. ToCT: A task ontology to manage complex verbalisation templates. ONline: https://github.com/AdeebNqo/ToCT (to be updated with DOI)(submitted to an international conference)
 
 ## Funding
 
