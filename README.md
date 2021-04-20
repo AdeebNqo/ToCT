@@ -24,7 +24,9 @@ CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Citing ToCT
 
-Mahlaza, Z., Keet, C.M. ToCT: A task ontology to manage complex verbalisation templates. ONline: https://github.com/AdeebNqo/ToCT (to be updated with DOI)(submitted to an international conference)
+Mahlaza, Z., Keet, C.M. ToCT: A task ontology to manage complex verbalisation templates. Online (submitted to an international conference)
+
+[![DOI](https://zenodo.org/badge/359607259.svg)](https://zenodo.org/badge/latestdoi/359607259)
 
 ## Funding
 
