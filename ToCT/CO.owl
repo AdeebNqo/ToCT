@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/co/"
-     xml:base="http://purl.org/co/"
+<rdf:RDF xmlns="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO"
+     xml:base="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,15 +11,16 @@
      xmlns:error="http://www.essepuntato.it/2009/10/error/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.org/co">
+    <owl:Ontology rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO">
         <owl:imports rdf:resource="http://purl.org/spar/error"/>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolo Ciccarese</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zola Mahlaza</dc:contributor>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
         <dc:title xml:lang="en">Module of the Collections Ontology (CO)</dc:title>
         <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</dc:format>
         <dc:language>en</dc:language>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">March 19, 2012</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">April 2020</dc:date>
         <dc:creator rdf:resource="http://www.paolociccarese.info"/>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco Ocana</dc:contributor>
     </owl:Ontology>
@@ -96,14 +97,14 @@
     
 
 
-    <!-- http://purl.org/co/element -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#element -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/element">
-        <owl:inverseOf rdf:resource="http://purl.org/co/elementOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/Collection"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#element">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#elementOf"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/co/item"/>
-            <rdf:Description rdf:about="http://purl.org/co/itemContent"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContent"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">The link to the members of a collection</rdfs:comment>
         <rdfs:label xml:lang="en">has element</rdfs:label>
@@ -111,32 +112,32 @@
     
 
 
-    <!-- http://purl.org/co/elementOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#elementOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/elementOf">
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#elementOf">
         <rdfs:comment xml:lang="en">The link to a collection in which the object is member.</rdfs:comment>
         <rdfs:label xml:lang="en">is element of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/co/firstItem -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItem -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/firstItem">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/item"/>
-        <owl:inverseOf rdf:resource="http://purl.org/co/firstItemOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItem">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItemOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/List"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/co/ListItem"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/previousItem"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#previousItem"/>
                         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/index"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -148,23 +149,23 @@
     
 
 
-    <!-- http://purl.org/co/firstItemOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItemOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/firstItemOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/itemOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItemOf">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
         <rdfs:comment xml:lang="en">The link to a list in which the item is first item.</rdfs:comment>
         <rdfs:label xml:lang="en">is first item of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/co/followedBy -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#followedBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/followedBy">
-        <owl:inverseOf rdf:resource="http://purl.org/co/precededBy"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#followedBy">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#precededBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/ListItem"/>
-        <rdfs:range rdf:resource="http://purl.org/co/ListItem"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
         <dc:description xml:lang="en">Given the list (I[1], I[2], ... , I[i-1], I[i], I[i+1], ... , I[n-1], I[n]), the item I[i] is followed by I[i+1], ... , I[n-1] and I[n].</dc:description>
         <rdfs:comment xml:lang="en">The link to the following item in a list.</rdfs:comment>
         <rdfs:label xml:lang="en">is followed by</rdfs:label>
@@ -172,15 +173,15 @@
     
 
 
-    <!-- http://purl.org/co/item -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/item">
-        <owl:inverseOf rdf:resource="http://purl.org/co/itemOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/Bag"/>
-        <rdfs:range rdf:resource="http://purl.org/co/Item"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Bag"/>
+        <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/co/item"/>
-            <rdf:Description rdf:about="http://purl.org/co/nextItem"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">The link to every item of the bag</rdfs:comment>
         <rdfs:label xml:lang="en">has item</rdfs:label>
@@ -188,15 +189,15 @@
     
 
 
-    <!-- http://purl.org/co/itemContent -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/itemContent">
-        <owl:inverseOf rdf:resource="http://purl.org/co/itemContentOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContent">
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContentOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/Item"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
         <rdfs:range>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://purl.org/co/Item"/>
+                <owl:complementOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The link to the actual resource to which the item refers.</rdfs:comment>
@@ -205,37 +206,37 @@
     
 
 
-    <!-- http://purl.org/co/itemContentOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContentOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/itemContentOf">
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemContentOf">
         <rdfs:comment xml:lang="en">The link to the item that refers to the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">is item content of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/co/itemOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/itemOf">
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf">
         <rdfs:comment xml:lang="en">The link to a bag in which the item is member.</rdfs:comment>
         <rdfs:label xml:lang="en">is item of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/co/lastItem -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/lastItem">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/item"/>
-        <owl:inverseOf rdf:resource="http://purl.org/co/lastItemOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItemOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/co/List"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/co/ListItem"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/nextItem"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem"/>
                         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -247,21 +248,21 @@
     
 
 
-    <!-- http://purl.org/co/lastItemOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItemOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/lastItemOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/itemOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItemOf">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
         <rdfs:comment xml:lang="en">The link to a list in which the item is last item.</rdfs:comment>
         <rdfs:label xml:lang="en">is last item of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/co/nextItem -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/nextItem">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/followedBy"/>
-        <owl:inverseOf rdf:resource="http://purl.org/co/previousItem"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#followedBy"/>
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#previousItem"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <dc:description xml:lang="en">Given the list (I[1], I[2], ... , I[i-1], I[i], I[i+1], ... , I[n-1], I[n]), the next item of I[i] is I[i+1].</dc:description>
         <rdfs:comment xml:lang="en">The link to the next item in a list.</rdfs:comment>
@@ -270,9 +271,9 @@
     
 
 
-    <!-- http://purl.org/co/precededBy -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#precededBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/precededBy">
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#precededBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:description xml:lang="en">Given the list (I[1], I[2], ... , I[i-1], I[i], I[i+1], ... , I[n-1], I[n]), the item I[i] is preceded by I[i-1], ... , I[2] and I[1].</dc:description>
         <rdfs:comment xml:lang="en">The link to the preceding item in a list.</rdfs:comment>
@@ -281,10 +282,10 @@
     
 
 
-    <!-- http://purl.org/co/previousItem -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#previousItem -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/co/previousItem">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/precededBy"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#previousItem">
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#precededBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <dc:description xml:lang="en">Given the list (I[1], I[2], ... , I[i-1], I[i], I[i+1], ... , I[n-1], I[n]), the previous item of I[i] is I[i-1].</dc:description>
         <rdfs:comment xml:lang="en">The link to the previous item in a list.</rdfs:comment>
@@ -304,10 +305,10 @@
     
 
 
-    <!-- http://purl.org/co/index -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/co/index">
-        <rdfs:domain rdf:resource="http://purl.org/co/ListItem"/>
+    <owl:DatatypeProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index">
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
         <rdfs:comment xml:lang="en">A number identifying the position, starting from 1, of a particular list item within a list.</rdfs:comment>
         <rdfs:label xml:lang="en">has index</rdfs:label>
@@ -315,10 +316,10 @@
     
 
 
-    <!-- http://purl.org/co/size -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/co/size">
-        <rdfs:domain rdf:resource="http://purl.org/co/Collection"/>
+    <owl:DatatypeProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size">
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <dc:description xml:lang="en">CO defines the size of a collection as the sum of the number of times entities that are part of the collection appear in it. This means that co:size considers how much each entity is involved by a particular collection, i.e.:
 - the size of the set {a, b, c} is three
@@ -347,30 +348,30 @@
     
 
 
-    <!-- http://purl.org/co/Bag -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Bag -->
 
-    <owl:Class rdf:about="http://purl.org/co/Bag">
-        <rdfs:subClassOf rdf:resource="http://purl.org/co/Collection"/>
-        <owl:disjointWith rdf:resource="http://purl.org/co/Set"/>
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Bag">
+        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection"/>
+        <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Set"/>
         <rdfs:comment xml:lang="en">Collection that can have a number of copies of each object</rdfs:comment>
         <rdfs:label xml:lang="en">bag</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/co/Collection -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection -->
 
-    <owl:Class rdf:about="http://purl.org/co/Collection">
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/element"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#element"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/size"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -380,18 +381,18 @@
     
 
 
-    <!-- http://purl.org/co/Item -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item -->
 
-    <owl:Class rdf:about="http://purl.org/co/Item">
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.org/co/item"/>
+                        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://purl.org/co/Bag"/>
+                <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Bag"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Element belonging to a bag</rdfs:comment>
@@ -400,29 +401,29 @@
     
 
 
-    <!-- http://purl.org/co/List -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List -->
 
-    <owl:Class rdf:about="http://purl.org/co/List">
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/co/Bag"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Bag"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/item"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/co/ListItem"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+                        <owl:allValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/firstItem"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItem"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/lastItem"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -432,13 +433,13 @@
     
 
 
-    <!-- http://purl.org/co/ListItem -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem -->
 
-    <owl:Class rdf:about="http://purl.org/co/ListItem">
-        <rdfs:subClassOf rdf:resource="http://purl.org/co/Item"/>
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem">
+        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/index"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -448,10 +449,10 @@
     
 
 
-    <!-- http://purl.org/co/Set -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Set -->
 
-    <owl:Class rdf:about="http://purl.org/co/Set">
-        <rdfs:subClassOf rdf:resource="http://purl.org/co/Collection"/>
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Set">
+        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Collection"/>
         <rdfs:comment xml:lang="en">A collection that cannot contain duplicate elements.</rdfs:comment>
         <rdfs:label xml:lang="en">set</rdfs:label>
     </owl:Class>
@@ -474,23 +475,23 @@
 
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/co/List"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/co/item"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/co/ListItem"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
+                <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/co/List"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/firstItem"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/co/Item"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItem"/>
+                        <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/co/lastItem"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/co/Item"/>
+                        <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem"/>
+                        <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#Item"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -560,7 +561,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/precededBy"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#precededBy"/>
                         <swrl:argument1 rdf:resource="urn:swrl#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
@@ -591,7 +592,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/followedBy"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#followedBy"/>
                         <swrl:argument1 rdf:resource="urn:swrl#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
@@ -622,7 +623,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/itemOf"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
                         <swrl:argument1 rdf:resource="urn:swrl#i"/>
                         <swrl:argument2 rdf:resource="urn:swrl#l"/>
                     </rdf:Description>
@@ -633,7 +634,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#i"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#value"/>
                             </rdf:Description>
@@ -644,7 +645,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/size"/>
+                                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size"/>
                                         <swrl:argument1 rdf:resource="urn:swrl#l"/>
                                         <swrl:argument2 rdf:resource="urn:swrl#value"/>
                                     </rdf:Description>
@@ -662,7 +663,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/lastItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#l"/>
                         <swrl:argument2 rdf:resource="urn:swrl#i"/>
                     </rdf:Description>
@@ -679,7 +680,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/itemOf"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
                         <swrl:argument1 rdf:resource="urn:swrl#li"/>
                         <swrl:argument2 rdf:resource="urn:swrl#l"/>
                     </rdf:Description>
@@ -690,7 +691,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#li"/>
                                 <swrl:argument2>1</swrl:argument2>
                             </rdf:Description>
@@ -706,7 +707,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/firstItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#firstItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#l"/>
                         <swrl:argument2 rdf:resource="urn:swrl#li"/>
                     </rdf:Description>
@@ -723,7 +724,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/itemOf"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
                         <swrl:argument1 rdf:resource="urn:swrl#li1"/>
                         <swrl:argument2 rdf:resource="urn:swrl#l"/>
                     </rdf:Description>
@@ -734,7 +735,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/itemOf"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#li2"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#l"/>
                             </rdf:Description>
@@ -745,7 +746,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                         <swrl:argument1 rdf:resource="urn:swrl#li1"/>
                                         <swrl:argument2 rdf:resource="urn:swrl#r1"/>
                                     </rdf:Description>
@@ -756,7 +757,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#li2"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl#r2"/>
                                             </rdf:Description>
@@ -806,7 +807,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/nextItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#li1"/>
                         <swrl:argument2 rdf:resource="urn:swrl#li2"/>
                     </rdf:Description>
@@ -823,7 +824,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/lastItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#l"/>
                         <swrl:argument2 rdf:resource="urn:swrl#i"/>
                     </rdf:Description>
@@ -834,7 +835,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/size"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#l"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#value"/>
                             </rdf:Description>
@@ -850,7 +851,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                         <swrl:argument1 rdf:resource="urn:swrl#i"/>
                         <swrl:argument2 rdf:resource="urn:swrl#value"/>
                     </rdf:Description>
@@ -867,7 +868,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/lastItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#lastItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#list"/>
                         <swrl:argument2 rdf:resource="urn:swrl#last"/>
                     </rdf:Description>
@@ -878,7 +879,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#last"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#r"/>
                             </rdf:Description>
@@ -894,7 +895,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/size"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#size"/>
                         <swrl:argument1 rdf:resource="urn:swrl#list"/>
                         <swrl:argument2 rdf:resource="urn:swrl#r"/>
                     </rdf:Description>
@@ -911,7 +912,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/nextItem"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#nextItem"/>
                         <swrl:argument1 rdf:resource="urn:swrl#current"/>
                         <swrl:argument2 rdf:resource="urn:swrl#next"/>
                     </rdf:Description>
@@ -922,7 +923,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                                <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#current"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#r"/>
                             </rdf:Description>
@@ -968,7 +969,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.org/co/index"/>
+                        <swrl:propertyPredicate rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#index"/>
                         <swrl:argument1 rdf:resource="urn:swrl#next"/>
                         <swrl:argument2 rdf:resource="urn:swrl#nextR"/>
                     </rdf:Description>
