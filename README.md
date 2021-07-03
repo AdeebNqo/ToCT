@@ -19,6 +19,29 @@ This was subsequently formalised into OWL as a task ontology. This ontology was 
 - Output: Ingabe lonke ihebhu lingumuthi?
 
 
+The chosen template has five fragments. See the following snippet:
+
+```
+<templ1> a toct:Template
+    ; toct:supportsLanguage <translZu>
+    ; co:firstItem <ngabe>
+    ; co:lastItem <qmark>
+    ; co:item <onke>, <c1>, <c2> .
+```
+
+As can be seen from the snippet above, the template's first fragment is a unimorphic word `<ngabe>` and it is followed by the polymorphic word `<onke>`. Drawing special attention to a dependency between the various fragments, consider the following snippet:
+
+```
+<onke> a toct:PolymorphicWord
+    ; toct:reliesOn <c1>
+    ; co:firstItem <bo>
+    ; co:lastItem <onkeRoot>
+    ; co:nextItem <c1> .
+```
+
+In the above snippet, it is specified, via `toct:reliesOn`, that the first word is dependent on the noun inserted into the first slot (i.e., `<c1>`). Currently, the various templates are created manually, however, there is potential to make use of software to make the process easier and faster.
+
+
 ## People
 
 
