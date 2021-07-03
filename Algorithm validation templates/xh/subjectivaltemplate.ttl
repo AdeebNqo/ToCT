@@ -1,0 +1,46 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/test/> .
+@prefix  toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
+@prefix  mola: <https://ontology.londisizwe.org/mola#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<plainOPPresentTense> a toct:Template
+	; toct:supportsLanguage <cpt_xhosa>
+	; co:firstItem <all>
+	; co:lastItem <noun1Slot>
+	; co:item <all>, <noun1Slot>, <only> .
+
+<cpt_xhosa> a mola:Dialect
+	; mola:isFamily <isiXhosa> .
+
+<all> a toct:PolymorphicWord
+	; co:index "1"^^xsd:positiveInteger
+	; co:nextItem <noun1Slot>
+	; co:firstItem <quantConcord>
+	; co:lastItem <onke>
+	; toct:reliesOn <noun1Slot> .
+
+<noun1Slot> a toct:Slot
+	; co:index "2"^^xsd:positiveInteger
+	; toct:hasLabel "noun1Slot"^^xsd:string
+	; toct:labeledWith <posNounType> .
+
+<quantConcord> a toct:Concord
+	; co:index "1"^^xsd:positiveInteger
+	; xhtemp:hasConcordType <subjConType>
+	; toct:hasLabel "QC"^^xsd:string
+	; toct:dependsOn <noun1Slot>
+	; co:nextItem <onke> .
+
+<onke> a toct:Root
+	; co:index "2"^^xsd:positiveInteger
+	; toct:hasValue "onke"^^xsd:string .
+
+<subjConType> a xhtemp:SubjectivalConcord .
+
+<posNounType> a xhtemp:Noun .

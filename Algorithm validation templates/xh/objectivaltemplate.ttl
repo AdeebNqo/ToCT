@@ -1,0 +1,71 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/test/> .
+@prefix  toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
+@prefix  mola: <https://ontology.londisizwe.org/mola#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+<verbObjSubjTemplate> a toct:Template
+	; toct:supportsLanguage <cpt_xhosa>
+	; co:firstItem <noun1Slot>
+	; co:lastItem <noun2Slot>
+	; co:item  <noun1Slot>, <walk> , <noun2Slot> .
+
+<cpt_xhosa> a mola:Dialect
+	; mola:isFamily <isiXhosa> .
+
+<noun1Slot> a toct:Slot
+	; co:index "1"^^xsd:positiveInteger
+	; toct:labeledWith <posNounType>
+	; toct:hasLabel "noun1"^^xsd:string
+	; co:nextItem <walk> .
+
+<walk> a toct:PolymorphicWord
+	; co:index "2"^^xsd:positiveInteger
+	; co:firstItem <subj>
+	; toct:reliesOn <noun1Slot>
+	; toct:reliesOn <noun2Slot>
+	; co:nextItem <noun2Slot>
+	; co:lastItem <isa> .
+
+<subj> a toct:Concord
+	; co:index "1"^^xsd:positiveInteger
+	; xhtemp:hasConcordType <subjConType>
+	; toct:hasLabel "Subj"^^xsd:string
+	; toct:dependsOn <noun1Slot>
+	; co:nextItem <ya> .
+
+<ya> a toct:UnimorphicAffix
+	; co:index "2"^^xsd:positiveInteger
+	; toct:hasValue "ya"^^xsd:string
+	; co:nextItem <obj> .
+
+<obj> a toct:Concord
+	; co:index "3"^^xsd:positiveInteger
+	; xhtemp:hasConcordType <objConType>
+	; toct:hasLabel "Obj"^^xsd:string
+	; toct:dependsOn <noun2Slot>
+	; co:nextItem <walkroot> .
+
+<walkroot> a toct:Root
+	; co:index "4"^^xsd:positiveInteger
+	; toct:hasValue "hamb"^^xsd:string
+	; co:nextItem <isa> .
+
+<isa> a toct:UnimorphicAffix
+	; co:index "5"^^xsd:positiveInteger
+	; toct:hasValue "isa"^^xsd:string .
+
+<noun2Slot> a toct:Slot
+	; co:index "3"^^xsd:positiveInteger
+	; toct:hasLabel "noun2"^^xsd:string .
+
+<subjConType> a xhtemp:SubjectivalConcord .
+
+<objConType> a xhtemp:ObjectivalConcord .
+
+<posNounType> a xhtemp:Noun .

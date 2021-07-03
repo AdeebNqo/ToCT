@@ -1,0 +1,51 @@
+@base <http://people.cs.uct.ac.za/~zmahlaza/templates/test/> .
+@prefix  toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
+@prefix  mola: <https://ontology.londisizwe.org/mola#> .
+@prefix  owl: <http://www.w3.org/2002/07/owl#> .
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix  xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+
+
+<relativeTemplate> a toct:Template
+    ; co:firstItem <noun1Slot>
+    ; co:lastItem <left>
+    ; toct:supportsLanguage <cpt_xhosa>
+    ; co:item <noun1Slot>, <left> .
+
+<cpt_xhosa> a mola:Dialect
+	; mola:isFamily <isiXhosa> .
+
+<noun1Slot> a toct:Slot
+	; co:index "1"^^xsd:positiveInteger
+	; toct:labeledWith <posNounType>
+	; toct:hasLabel "noun1Slot"^^xsd:string
+	; co:nextItem <left> .
+
+<left> a toct:PolymorphicWord
+	; co:index "2"^^xsd:positiveInteger
+	; toct:reliesOn <noun1Slot>
+	; co:firstItem <RelC>
+	; co:lastItem <suffix> .
+
+<RelC> a toct:Concord
+	; co:index "1"^^xsd:positiveInteger
+	; xhtemp:hasConcordType <relConType>
+	; toct:hasLabel "Rel"^^xsd:string
+	; co:nextItem <leftRoot> .
+
+<leftRoot> a toct:Root
+	; co:index "2"^^xsd:positiveInteger
+	; toct:hasValue "hamb"^^xsd:string
+	; co:nextItem <suffix> .
+
+<suffix> a toct:AffixChunk
+	; co:index "3"^^xsd:positiveInteger
+	; toct:hasValue "ileyo"^^xsd:string .
+
+<relConType> a xhtemp:RelativeConcord .
+
+<posNounType> a xhtemp:Noun .

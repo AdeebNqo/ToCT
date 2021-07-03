@@ -1,7 +1,7 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
 
@@ -15,7 +15,7 @@
 
 <cPoly> a toct:PolymorphicWord
     ; co:firstItem <op>
-    ; co:lastItem <locSuf> 
+    ; co:lastItem <locSuf>
     ; co:item <locPre>, <c> .
 
 <op> a toct:Slot

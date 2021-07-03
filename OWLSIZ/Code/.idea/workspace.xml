@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8758711a-aaac-4b3e-9703-2ba4dd20d017" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/XhTemplateAnnotationOntology.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/ZuTemplateAnnotationOntology.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template1.1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template1.1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template10.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template10.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template11.1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template11.1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template11.2.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template11.2.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template12.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template12.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template13.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template13.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template2.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template2.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template3.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template3.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template4.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template4.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template5.1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template5.1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template5.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template5.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template6.1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template6.2.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.2.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template6.3.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.3.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template6.4.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.4.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template6.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template7.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template7.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template8.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template8.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template9.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template9.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/enumerativetemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/ladjectivaltemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/objectivaltemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/phimbitemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/postemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/relativetemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/sadjectivaltemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/slot_fillers.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/subjectivaltemplate.ttl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/MMNguniTemplateLinearizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/NguniVowelDetector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhFeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhosaConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhosaMorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuFeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuluConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuluMorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/ConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/MorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/SlotFiller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/TemplateLinearizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/ConcordType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/Feature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/FeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/NounClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/POS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Chimera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/InternalSlotOrWordPortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/InternalSlotRootAffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Morpheme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Affix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/AffixChunk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Concord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Phrase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/PolymorphicWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Punctuation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Root.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Slot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/SlotValues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Space.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Template.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/TemplatePortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/UnimorphicAffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/UnimorphicWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/WordPortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/parser/TemplateReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/parser/URIS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/MMNguniTemplateLinearizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/NguniVowelDetector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhFeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhosaConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhosaMorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuFeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuluConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuluMorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/ConcordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/MorphophonoAlternator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/SlotFiller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/TemplateLinearizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/ConcordType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/Feature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/FeatureParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/NounClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/POS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Chimera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/InternalSlotOrWordPortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/InternalSlotRootAffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Morpheme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Affix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/AffixChunk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Concord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Phrase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/PolymorphicWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Punctuation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Root.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Slot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/SlotValues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Space.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Template.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/TemplatePortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/UnimorphicAffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/UnimorphicWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/WordPortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/parser/TemplateReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/parser/URIS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/test/XhosaTemplateReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/test/ZuluTemplateReaderTest.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OntologyVerbaliser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>The name</find>
+      <find>Data</find>
+      <find>template8</find>
+      <find>template</find>
+      <find>TemplateReader</find>
+      <find>ihebhu</find>
+      <find>nncPairs</find>
+      <find>NounClassResolver</find>
+      <find>Filename is</find>
+      <find>System.</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/OntologyVerbaliser.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625300897358" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.1756993" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="OntologyVerbaliser" />
+      <module name="code" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8758711a-aaac-4b3e-9703-2ba4dd20d017" name="Default Changelist" comment="" />
+      <created>1622368908232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622368908232</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29220086" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tuple.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/GrammarEngineNguni.jar!/research/nguni/MMNguniTemplateLinearizer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sourceforge/owlapi/owlapi-distribution/5.1.17/owlapi-distribution-5.1.17.jar!/org/semanticweb/owlapi/model/HasLogicalAxioms.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/GITemplateParsing.jar!/research/parser/TemplateReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OntologyVerbaliser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0_252</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>code</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1756993" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>GrammarEngineNguni</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1756993" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
