@@ -6,8 +6,8 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <enumerativeTempl> a toct:Template
 	; toct:supportsLanguage <cpt_zulu>
@@ -31,7 +31,7 @@
 
 <enumConc> a toct:Concord
 	; co:index "1"^^xsd:positiveInteger
-	; zutemp:hasConcordType <enumConType>
+	; cao:hasConcordType <enumConType>
 	; toct:hasLabel "EnumC"^^xsd:string
 	; co:nextItem <oneStem> .
 
@@ -39,4 +39,4 @@
 	; co:index "2"^^xsd:positiveInteger
 	; toct:hasValue "nye"^^xsd:string .
 
-<enumConType> a  zutemp:EnumerativeConcord .
+<enumConType> a  cao:EnumerativeConcord .

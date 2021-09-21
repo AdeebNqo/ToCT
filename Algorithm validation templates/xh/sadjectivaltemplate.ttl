@@ -6,8 +6,8 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <sadjectTemplate> a toct:Template
     ; co:firstItem <noun3Slot>
@@ -33,7 +33,7 @@
 
 <SAdjC> a toct:Concord
 	; co:index "1"^^xsd:positiveInteger
-	; xhtemp:hasConcordType <shortAdjConType>
+	; cao:hasConcordType <shortAdjConType>
 	; toct:hasLabel "SAdj"^^xsd:string
 	; toct:dependsOn <noun3Slot>
 	; co:nextItem <oldRoot> .
@@ -47,6 +47,4 @@
     ; co:index "3"^^xsd:positiveInteger
     ; toct:hasValue "a"^^xsd:string .
 
-<shortAdjConType> a xhtemp:ShortAdjectivalConcord .
-
-<posNounType> a xhtemp:Noun .
+<shortAdjConType> a cao:ShortAdjectivalConcord .

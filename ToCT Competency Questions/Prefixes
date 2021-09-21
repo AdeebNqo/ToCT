@@ -1,0 +1,4 @@
+PREFIX toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#>
+PREFIX co: <http://purl.org/co/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+

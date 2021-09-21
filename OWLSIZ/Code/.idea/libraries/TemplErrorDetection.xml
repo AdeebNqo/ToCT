@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TemplErrorDetection">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/TemplErrorDetection.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

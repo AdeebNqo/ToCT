@@ -1,16 +1,16 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
 
 
 <cloudc3Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <coverage4Slot>, <bekho>, <coverage5Slot>, <okanye>
-    ; co:firstItem <bakho>
-    ; co:lastItem <coverage6Slot> .
+    ; toct:hasPart <coverage4Slot>, <bekho>, <coverage5Slot>, <okanye>
+    ; toct:hasFirstPart <bakho>
+    ; toct:hasLastPart <coverage6Slot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -18,27 +18,27 @@
 <bakho> a toct:Phrase
     ; toct:hasValue "Kuzakubakho izulu"
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <coverage4Slot> .
+    ; toct:hasNextPart <coverage4Slot> .
 
 <coverage4Slot> a toct:Slot
     ; toct:hasLabel "rel4"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <bekho> .
+    ; toct:hasNextPart <bekho> .
 
 <bekho> a toct:Phrase
     ; toct:hasValue "kubekho namaxesha apho kukho izulu"^^xsd:string
     ; co:index "3"^^xsd:positiveInteger
-    ; co:nextItem <coverage5Slot> .
+    ; toct:hasNextPart <coverage5Slot> .
 
 <coverage5Slot> a toct:Slot
     ; toct:hasLabel "rel5"^^xsd:string
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <okanye> .
+    ; toct:hasNextPart <okanye> .
 
 <okanye> a toct:UnimorphicWord
     ; toct:hasValue "okanye"^^xsd:string
     ; co:index "5"^^xsd:positiveInteger
-    ; co:nextItem <coverage6Slot> .
+    ; toct:hasNextPart <coverage6Slot> .
 
 <coverage6Slot> a toct:Slot
     ; toct:hasLabel "rel6"^^xsd:string

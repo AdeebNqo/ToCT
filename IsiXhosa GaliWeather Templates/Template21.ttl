@@ -1,15 +1,15 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
 
 <wind2Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <lindele>, <wind>, <qala>, <time1Slot>, <kuya>, <time2Slot>
-    ; co:firstItem <lindele>
-    ; co:lastItem <time2Slot> .
+    ; toct:hasPart <lindele>, <wind>, <qala>, <time1Slot>, <kuya>, <time2Slot>
+    ; toct:hasFirstPart <lindele>
+    ; toct:hasLastPart <time2Slot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -17,18 +17,18 @@
 <lindele> a toct:Phrase
     ; toct:hasValue "Silindele imimoya ezakuba"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <wind> .
+    ; toct:hasNextPart <wind> .
 
 <wind> a toct:PolymorphicWord
     ; co:index "2"^^xsd:positiveInteger
-    ; co:item <na>, <windSlot>
-    ; co:firstItem <na>
-    ; co:lastItem <windSlot> .
+    ; toct:hasPart <na>, <windSlot>
+    ; toct:hasFirstPart <na>
+    ; toct:hasLastPart <windSlot> .
 
 <na> a toct:UnimorphicAffix
     ; toct:hasValue "na"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <windSlot> .
+    ; toct:hasNextPart <windSlot> .
 
 <windSlot> a toct:Slot
     ; co:index "2"^^xsd:positiveInteger
@@ -37,17 +37,17 @@
 <qala> a toct:UnimorphicWord
     ; toct:hasValue "ukuqala"^^xsd:string
     ; co:index "3"^^xsd:positiveInteger
-    ; co:nextItem <time1Slot> .
+    ; toct:hasNextPart <time1Slot> .
 
 <time1Slot> a toct:Slot
     ; toct:hasLabel "t2"^^xsd:string
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <kuya> .
+    ; toct:hasNextPart <kuya> .
 
 <kuya> a toct:UnimorphicWord
     ; toct:hasValue "ukuya"^^xsd:string
     ; co:index "5"^^xsd:positiveInteger
-    ; co:nextItem <time2Slot> .
+    ; toct:hasNextPart <time2Slot> .
 
 <time2Slot> a toct:Slot
     ; toct:hasLabel "t3"^^xsd:string

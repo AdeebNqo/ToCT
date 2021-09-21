@@ -6,8 +6,8 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 
 <relativeTemplate> a toct:Template
@@ -33,7 +33,7 @@
 
 <RelC> a toct:Concord
 	; co:index "1"^^xsd:positiveInteger
-	; zutemp:hasConcordType <relConType>
+	; cao:hasConcordType <relConType>
 	; toct:hasLabel "RelConcord"^^xsd:string
 	; co:nextItem <leftRoot> .
 
@@ -46,6 +46,5 @@
 	; co:index "3"^^xsd:positiveInteger
 	; toct:hasValue "ileyo"^^xsd:string .
 
-<relConType> a zutemp:RelativeConcord .
+<relConType> a cao:RelativeConcord .
 
-<posNounType> a zutemp:Noun .

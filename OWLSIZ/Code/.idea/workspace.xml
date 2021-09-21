@@ -2,9 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8758711a-aaac-4b3e-9703-2ba4dd20d017" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/XhTemplateAnnotationOntology.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Templates/ZuTemplateAnnotationOntology.owl" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/TemplErrorDetection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/za/co/mahlaza/research/owlsiz/Triple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Realisation code/GITemplateParsing/GITemplateParsing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Realisation code/GITemplates.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Realisation code/GrammarEngineBase/GrammarEngineBase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Realisation code/GrammarEngineNguni/GrammarEngineNguni.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Realisation code/TemplErrorDetection/TemplErrorDetection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/enumerativetemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/enumerativetemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/ladjectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/ladjectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/objectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/objectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/phimbitemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/phimbitemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/postemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/postemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/relativetemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/relativetemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/sadjectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/sadjectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/slot_fillers.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/slot_fillers.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/xh/subjectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/xh/subjectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/adjectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/adjectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/enumerativetemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/enumerativetemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/objectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/objectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/postemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/postemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/relativetemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/relativetemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/slot_fillers.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/slot_fillers.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm validation templates/zu/subjectivaltemplate.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm validation templates/zu/subjectivaltemplate.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AnnotationFiles/XhTemplateAnnotationOntology.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AnnotationFiles/ZuTemplateAnnotationOntology.owl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template1.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template10.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template10.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template11.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template11.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template12.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template12.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template13.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template13.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template14.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template14.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template15.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template15.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template16.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template16.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template17.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template17.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template18.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template18.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template19.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template19.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template2.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template2.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template20.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template20.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template21.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template21.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template22.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template22.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template3.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template3.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template4.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template4.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template5.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template5.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template6.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template6.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template7.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template7.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template8.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template8.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template9.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/Template9.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/slot-fillers.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../../IsiXhosa GaliWeather Templates/slot-fillers.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_distribution_5_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/GITemplateParsing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/GITemplateParsing.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/GrammarEngineNguni.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/GrammarEngineNguni.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/code/OntologyVerbaliser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/code/OntologyVerbaliser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/code/Tuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OntologyVerbaliser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/za/co/mahlaza/research/owlsiz/OntologyVerbaliser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuple.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template1.1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template1.1.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template1.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template1.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template10.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template10.ttl" afterDir="false" />
@@ -23,125 +80,23 @@
       <change beforePath="$PROJECT_DIR$/../Templates/template6.4.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.4.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template6.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template6.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template7.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template7.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Templates/template8.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template8.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Templates/template8.ttl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Templates/template9.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Templates/template9.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/enumerativetemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/ladjectivaltemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/objectivaltemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/phimbitemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/postemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/relativetemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/sadjectivaltemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/slot_fillers.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Algorithm validation templates/subjectivaltemplate.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/MMNguniTemplateLinearizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/NguniVowelDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhFeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhosaConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/xh/XhosaMorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuFeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuluConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/impl/nguni/zu/ZuluMorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/ConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/MorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/SlotFiller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/interfaces/TemplateLinearizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/ConcordType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/Feature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/FeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/NounClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/feature/POS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Chimera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/InternalSlotOrWordPortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/InternalSlotRootAffix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Morpheme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/interfaces/Word.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Affix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/AffixChunk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Concord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Phrase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/PolymorphicWord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Punctuation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Root.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Slot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/SlotValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Space.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/Template.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/TemplatePortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/UnimorphicAffix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/UnimorphicWord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/models/template/WordPortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/parser/TemplateReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/research/parser/URIS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/MMNguniTemplateLinearizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/NguniVowelDetector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhFeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhosaConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/xh/XhosaMorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuFeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuluConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/impl/nguni/zu/ZuluMorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/ConcordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/MorphophonoAlternator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/SlotFiller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/interfaces/TemplateLinearizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/ConcordType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/Feature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/FeatureParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/NounClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/feature/POS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Chimera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/InternalSlotOrWordPortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/InternalSlotRootAffix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Morpheme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/interfaces/Word.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Affix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/AffixChunk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Concord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Phrase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/PolymorphicWord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Punctuation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Root.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Slot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/SlotValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Space.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/Template.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/TemplatePortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/UnimorphicAffix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/UnimorphicWord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/models/template/WordPortion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/parser/TemplateReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/main/uct/parser/URIS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/test/XhosaTemplateReaderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Text generation algorithm implementation/src/test/ZuluTemplateReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToCT/CO.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToCT/CO.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToCT/ConceptualModel.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToCT/ConceptualModel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ToCT/ToCT.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../../ToCT/ToCT.owl" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/OntologyVerbaliser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -172,6 +127,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectId" id="1wGnJQlN99tRJVcLxIRrY8ENPYc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -183,11 +139,18 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625300897358" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -199,22 +162,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="OntologyVerbaliser" />
+      <option name="MAIN_CLASS_NAME" value="za.co.mahlaza.research.owlsiz.OntologyVerbaliser" />
       <module name="code" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=&quot;$PROJECT_DIR$/../../Realisation code/TemplErrorDetection/lib/FaCT++-linux-v1.6.5/64bit&quot;" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -227,6 +179,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

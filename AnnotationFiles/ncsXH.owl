@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY description "http://purl.org/dc/elements/1.1/description#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.meteck.org/files/ontologies/ncsXH.owl#"
+     xml:base="http://www.meteck.org/files/ontologies/ncsXH.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:description="http://purl.org/dc/elements/1.1/description#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.meteck.org/files/ontologies/ncsXH.owl">
+        <rdfs:seeAlso xml:lang="en">For details and context etc, refer to the MTSR&apos;15 paper entitled An Orchestration Framework for Linguistic Task Ontologies</rdfs:seeAlso>
+        <description:creator xml:lang="en">Maria Keet</description:creator>
+        <owl:versionInfo xml:lang="en">This is version 1 from July 2015</owl:versionInfo>
+        <rdfs:comment xml:lang="en">axiomatization for isiXhosa</rdfs:comment>
+        <owl:imports rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class11 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class11">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#hasPlural"/>
+                <owl:allValuesFrom rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Class9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class12 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class12">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class13 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class13">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class16 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class16">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class17 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class17">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class18 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class18">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class19 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class19">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class1a -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class1a">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#hasPlural"/>
+                <owl:allValuesFrom rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Class2a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class2 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class2">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#hasSingular"/>
+                <owl:allValuesFrom rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Class1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class20 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class20">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class21 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class21">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class22 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class22">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class23 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class23">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class2a -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class2a">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#hasSingular"/>
+                <owl:allValuesFrom rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Class1a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class2b -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class2b">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#Class6 -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#Class6">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#hasSingular"/>
+                <owl:allValuesFrom rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Class5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.meteck.org/files/ontologies/ncs.owl#class_3a -->
+
+    <rdf:Description rdf:about="http://www.meteck.org/files/ontologies/ncs.owl#class_3a">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/files/ontologies/ncs.owl#Obsolete"/>
+        <rdfs:comment xml:lang="en">not used in isiXhosa</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -6,13 +6,12 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <noun1> a toct:UnimorphicWord
     ; toct:hasValue "izinja"^^xsd:string
-    ; zutemp:hasPOS <posNounType>
-    ; zutemp:hasNounClass <nounClass10Type>
+    ; zucao:hasNounClass <nounClass10Type>
     ; toct:fillsIn <noun1Slot>
     ; toct:controls <LAdjC>
     ; toct:controls <subj>
@@ -32,8 +31,6 @@
     ; toct:controls <SAdjC>
     ; toct:controls <phiconc> .
 
-<nounClass2Type> a zutemp:NounClass2 .
+<nounClass2Type> a cao:NounClass2 .
 
-<nounClass10Type> a zutemp:NounClass10 .
-
-<posNounType> a zutemp:Noun .
+<nounClass10Type> a cao:NounClass10 .

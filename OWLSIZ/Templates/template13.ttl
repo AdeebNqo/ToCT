@@ -1,51 +1,51 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
 @prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <templ13> a toct:Template
     ; toct:supportsLanguage <translZu>
-    ; co:firstItem <op>
-    ; co:lastItem <n>
-    ; co:item <c>, <phezulu> .
+    ; toct:hasFirstPart <op>
+    ; toct:hasLastPart  <n>
+    ; toct:hasPart <c>, <phezulu> .
 
 <translZu> a mola:Dialect
     ; mola:isFamily <isiZulu> .
 
 <op> a toct:Slot
     ; toct:hasLabel "OP"^^xsd:string
-    ; co:nextItem <c> .
+    ; toct:hasNextPart <c> .
 
 <c> a toct:Slot
     ; toct:hasLabel "C"^^xsd:string
-    ; co:nextItem <phezulu> .
+    ; toct:hasNextPart <phezulu> .
 
 <phezulu> a toct:PolymorphicWord
     ; toct:reliesOn <c>
-    ; co:firstItem <relC>
-    ; co:lastItem <phezulStem>
-    ; co:nextItem <n> .
+    ; toct:hasFirstPart <relC>
+    ; toct:hasLastPart  <phezulStem>
+    ; toct:hasNextPart <n> .
 
 <relC> a toct:Concord
-    ; zutemp:hasConcordType <relConType>
+    ; cao:hasConcordType <relConType>
     ; toct:hasLabel "relCon"^^xsd:string
-    ; co:nextItem <phezulStem> .
+    ; toct:hasNextPart <phezulStem> .
 
 <phezulStem> a toct:Root
     ; toct:hasValue "mbalwa"^^xsd:string .
 
 <n> a toct:PolymorphicWord
     ; toct:reliesOn <c>
-    ; co:firstItem <kuka>
-    ; co:lastItem <nslot> .
+    ; toct:hasFirstPart <kuka>
+    ; toct:hasLastPart  <nslot> .
 
 <kuka> a toct:UnimorphicAffix
     ; toct:hasValue "ku-"^^xsd:string
-    ; co:nextItem <nslot> .
+    ; toct:hasNextPart <nslot> .
 
 <nslot> a toct:Slot
     ; toct:hasLabel "N"^^xsd:string .
 
-<relConType> a zutemp:RelativeConcord .
+<relConType> a cao:RelativeConcord .

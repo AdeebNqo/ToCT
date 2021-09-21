@@ -1,41 +1,41 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
 @prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <templ6.2> a toct:Template
     ; toct:supportsLanguage <translZu>
-    ; co:firstItem <opPoly>
-    ; co:lastItem <cPoly> .
+    ; toct:hasFirstPart <opPoly>
+    ; toct:hasLastPart  <cPoly> .
 
 <translZu> a mola:Dialect
     ; mola:isFamily <isiZulu> .
 
 <opPoly> a toct:PolymorphicWord
-    ; co:firstItem <yi>
-    ; co:lastItem <op>
-    ; co:nextItem <cPoly> .
+    ; toct:hasFirstPart <yi>
+    ; toct:hasLastPart  <op>
+    ; toct:hasNextPart <cPoly> .
 
 <yi> a toct:UnimorphicAffix
     ; toct:hasValue "yi"^^xsd:string
-    ; co:nextItem <op> .
+    ; toct:hasNextPart <op> .
 
 <op> a toct:Slot
     ; toct:hasLabel "OP"^^xsd:string .
 
 <cPoly> a toct:PolymorphicWord
-    ; co:firstItem <locPre>
-    ; co:lastItem <locSuf> .
+    ; toct:hasFirstPart <locPre>
+    ; toct:hasLastPart  <locSuf> .
 
 <locPre> a toct:Locative
     ; toct:hasLabel "Loc"
-    ; co:nextItem <c> .
+    ; toct:hasNextPart <c> .
 
 <c> a toct:Slot
     ; toct:hasLabel "C"^^xsd:string
-    ; co:nextItem <locSuf> .
+    ; toct:hasNextPart <locSuf> .
 
 <locSuf> a toct:UnimorphicAffix
     ; toct:hasValue "ini"^^xsd:string .

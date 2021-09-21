@@ -1,0 +1,201 @@
+  <Declaration>
+        <NamedIndividual IRI="#pluNameNounClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genSubjConcord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#uzola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hearRoot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#personSlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oozola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#singNameNounClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nangoku"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subjC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#umaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hearingTemplate"/>
+    </Declaration>
+    <Declaration>
+   <NamedIndividual IRI="#oomaria"/>
+   </Declaration>
+  <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#SubjectivalConcord"/>
+        <NamedIndividual IRI="#genSubjConcord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#PolymorphicWord"/>
+        <NamedIndividual IRI="#hear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#Root"/>
+        <NamedIndividual IRI="#hearRoot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#Template"/>
+        <NamedIndividual IRI="#hearingTemplate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#UnimorphicWord"/>
+        <NamedIndividual IRI="#nangoku"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#UnimorphicWord"/>
+        <NamedIndividual IRI="#oomaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#UnimorphicWord"/>
+        <NamedIndividual IRI="#oozola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#Slot"/>
+        <NamedIndividual IRI="#personSlot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#Class2a"/>
+        <NamedIndividual IRI="#pluNameNounClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#Class1a"/>
+        <NamedIndividual IRI="#singNameNounClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#Concord"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#UnimorphicWord"/>
+        <NamedIndividual IRI="#umaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#UnimorphicWord"/>
+        <NamedIndividual IRI="#uzola"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/firstItem"/>
+        <NamedIndividual IRI="#hear"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/lastItem"/>
+        <NamedIndividual IRI="#hear"/>
+        <NamedIndividual IRI="#hearRoot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/nextItem"/>
+        <NamedIndividual IRI="#hear"/>
+        <NamedIndividual IRI="#nangoku"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/firstItem"/>
+        <NamedIndividual IRI="#hearingTemplate"/>
+        <NamedIndividual IRI="#personSlot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/lastItem"/>
+        <NamedIndividual IRI="#hearingTemplate"/>
+        <NamedIndividual IRI="#nangoku"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#controls"/>
+        <NamedIndividual IRI="#oomaria"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#hasNounClass"/>
+        <NamedIndividual IRI="#oomaria"/>
+        <NamedIndividual IRI="#pluNameNounClass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#controls"/>
+        <NamedIndividual IRI="#oozola"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#hasNounClass"/>
+        <NamedIndividual IRI="#oozola"/>
+        <NamedIndividual IRI="#pluNameNounClass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/co/nextItem"/>
+        <NamedIndividual IRI="#personSlot"/>
+        <NamedIndividual IRI="#hear"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#hasConcordType"/>
+        <NamedIndividual IRI="#subjC"/>
+        <NamedIndividual IRI="#genSubjConcord"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#controls"/>
+        <NamedIndividual IRI="#umaria"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#hasNounClass"/>
+        <NamedIndividual IRI="#umaria"/>
+        <NamedIndividual IRI="#singNameNounClass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#controls"/>
+        <NamedIndividual IRI="#uzola"/>
+        <NamedIndividual IRI="#subjC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#hasNounClass"/>
+        <NamedIndividual IRI="#uzola"/>
+        <NamedIndividual IRI="#singNameNounClass"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasValue"/>
+        <NamedIndividual IRI="#nangoku"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nangoku</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasValue"/>
+        <NamedIndividual IRI="#oomaria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OoMariya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasValue"/>
+        <NamedIndividual IRI="#oozola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OoZola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasLabel"/>
+        <NamedIndividual IRI="#personSlot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[igama]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasLabel"/>
+        <NamedIndividual IRI="#subjC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[subjC]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasValue"/>
+        <NamedIndividual IRI="#umaria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">uMariya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#hasValue"/>
+        <NamedIndividual IRI="#uzola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">uZola</Literal>
+    </DataPropertyAssertion>

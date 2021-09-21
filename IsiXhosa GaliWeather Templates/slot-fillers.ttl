@@ -1,83 +1,85 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+@prefix ncs: <http://www.meteck.org/files/ontologies/ncs#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <ayinyukisihla> a toct:Phrase
-    ; co:firstItem <ayizokunyuka>
-    ; co:lastItem <isehla> 
+    ; toct:hasFirstPart <ayizokunyuka>
+    ; toct:hasLastPart <isehla> 
     ; toct:fillsIn <oscilationSlot>
     ; toct:fillsIn <minOscilationSlot>
     ; toct:fillsIn <maxOscilationSlot> .
 
 <izakunyukaisihla> a toct:Phrase
-    ; co:firstItem <izakunyuka>
-    ; co:lastItem <isehla> 
+    ; toct:hasFirstPart <izakunyuka>
+    ; toct:hasLastPart <isehla> 
     ; toct:fillsIn <oscilationSlot>
     ; toct:fillsIn <minOscilationSlot>
     ; toct:fillsIn <maxOscilationSlot> .
 
 <lihlakakhulu> a toct:Phrase
-    ; co:firstItem <lihla>
-    ; co:lastItem <khulu>
+    ; toct:hasFirstPart <lihla>
+    ; toct:hasLastPart <khulu>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <lihlancincincinci> a toct:Phrase
-    ; co:firstItem <lihla>
-    ; co:lastItem <ncincincinci>
+    ; toct:hasFirstPart <lihla>
+    ; toct:hasLastPart <ncincincinci>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <lihlancinci> a toct:Phrase
-    ; co:firstItem <lihla>
-    ; co:lastItem <ncinci>
+    ; toct:hasFirstPart <lihla>
+    ; toct:hasLastPart <ncinci>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <linyukancinci> a toct:Phrase
-    ; co:firstItem <linyuka>
-    ; co:lastItem <ncinci>
+    ; toct:hasFirstPart <linyuka>
+    ; toct:hasLastPart <ncinci>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <linyukancincincinci> a toct:Phrase
-    ; co:firstItem <linyuka>
-    ; co:lastItem <ncincincinci>
+    ; toct:hasFirstPart <linyuka>
+    ; toct:hasLastPart <ncincincinci>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <linyukankhulu> a toct:Phrase
-    ; co:firstItem <linyuka>
-    ; co:lastItem <khulu>
+    ; toct:hasFirstPart <linyuka>
+    ; toct:hasLastPart <khulu>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <linyukanmandla> a toct:Phrase
-    ; co:firstItem <linyuka>
-    ; co:lastItem <mandla>
+    ; toct:hasFirstPart <linyuka>
+    ; toct:hasLastPart <mandla>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <lihlamandla> a toct:Phrase
-    ; co:firstItem <lihla>
-    ; co:lastItem <mandla>
+    ; toct:hasFirstPart <lihla>
+    ; toct:hasLastPart <mandla>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
@@ -93,8 +95,7 @@
     ; toct:fillsIn <period5Slot>
     ; toct:fillsIn <period6Slot>
     ; toct:fillsIn <period7Slot>
-    ; xhtemp:hasPOS <posLocNounType>
-    ; xhtemp:hasNounClass <nounClass7Type> 
+    ; ncs:hasNounClass <nounClass7Type> 
     ; toct:controls <possXesha> .
 
 <gqabagqaba> a toct:Phrase
@@ -236,15 +237,15 @@
     ; toct:fillsIn <wind4Slot> .
 
 <phantsikhulu> a toct:Phrase
-    ; co:firstItem <buphantsi>
-    ; co:lastItem <khulu>
+    ; toct:hasFirstPart <buphantsi>
+    ; toct:hasLastPart <khulu>
     ; toct:fillsIn <minimumTempSlot>
     ; toct:fillsIn <maximumTempSlot>
     ; toct:fillsIn <tempSlot> .
 
 <phezulukakhulu> a toct:Phrase
-    ; co:firstItem <buphezulu>
-    ; co:lastItem <khulu> 
+    ; toct:hasFirstPart <buphezulu>
+    ; toct:hasLastPart <khulu> 
     ; toct:fillsIn <minimumTempSlot>
     ; toct:fillsIn <maximumTempSlot>
     ; toct:fillsIn <tempSlot> .
@@ -258,57 +259,57 @@
 
 
 <ayizokunyuka> a toct:PolymorphicWord
-    ; co:firstItem <azi>
-    ; co:lastItem <zonyoka> .
+    ; toct:hasFirstPart <azi>
+    ; toct:hasLastPart <zonyoka> .
 
 <lihla> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <hla> .
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <hla> .
 
 <linyuka> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <nyuka> .
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <nyuka> .
 
 <alinatshintsho> a toct:PolymorphicWord
-    ; co:firstItem <azi>
-    ; co:lastItem  <natshintso>
+    ; toct:hasFirstPart <azi>
+    ; toct:hasLastPart  <natshintso>
     ; toct:fillsIn <variationSlot>
     ; toct:fillsIn <minimumVariationSlot>
     ; toct:fillsIn <maxVariationSlot>
     ; toct:fillsIn <norVariationSlot> .
 
 <isehla> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <sehla> .
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <sehla> .
 
 <izakunyuka> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <zanyuka> .
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <zanyuka> .
 
 <buqhelekile> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <qhelekile>
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <qhelekile>
     ; toct:fillsIn <minimumTempSlot>
     ; toct:fillsIn <maximumTempSlot>
     ; toct:fillsIn <tempSlot> .
 
 <buphezulu> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <phezulu>
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <phezulu>
     ; toct:fillsIn <minimumTempSlot>
     ; toct:fillsIn <maximumTempSlot>
     ; toct:fillsIn <tempSlot> .
 
 <buphantsi> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <phantsi>
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <phantsi>
     ; toct:fillsIn <minimumTempSlot>
     ; toct:fillsIn <maximumTempSlot>
     ; toct:fillsIn <tempSlot> .
 
 <iyeka> a toct:PolymorphicWord
-    ; co:firstItem <i>
-    ; co:lastItem <eka> .
+    ; toct:hasFirstPart <i>
+    ; toct:hasLastPart <eka> .
 
 <ncincincinci> a toct:UnimorphicWord
     ; toct:hasValue "kancinci-kancinci"^^xsd:string .
@@ -359,8 +360,7 @@
     ; toct:fillsIn <period5Slot>
     ; toct:fillsIn <period6Slot>
     ; toct:fillsIn <period7Slot>
-    ; xhtemp:hasPOS <posLocNounTYpe>
-    ; xhtemp:hasNounClass <nounClass15Type>
+    ; ncs:hasNounClass <nounClass15Type>
     ; toct:controls <possXesha> .
 
 <ekupheleni> a toct:UnimorphicWord
@@ -373,8 +373,7 @@
     ; toct:fillsIn <period5Slot>
     ; toct:fillsIn <period6Slot>
     ; toct:fillsIn <period7Slot>
-    ; xhtemp:hasPOS <posLocNounType>
-    ; xhtemp:hasNounClass <nounClass15Type>
+    ; ncs:hasNounClass <nounClass15Type>
     ; toct:controls <possXesha> .
 
 <mvulo> a toct:UnimorphicWord
@@ -483,23 +482,23 @@
     ; toct:hasValue "yesichotho"^^xsd:string .
 
 <emane> a toct:PolymorphicWord
-    ; co:firstItem <relC>
-    ; co:lastItem <mane> .
+    ; toct:hasFirstPart <relC>
+    ; toct:hasLastPart <mane> .
 
 
 
 
 <relC> a toct:Concord
     ; toct:hasLabel "relC"^^xsd:string
-    ; xhtemp:hasConcordType <relConType> .
+    ; cao:hasConcordType <relConType> .
 
 <azi> a toct:Concord
     ; toct:hasLabel "negSubjC"^^xsd:string
-    ; xhtemp:hasConcordType <negSubjConType>  .
+    ; cao:hasConcordType <negSubjConType>  .
 
 <i> a toct:Concord
     ; toct:hasLabel "subjC"^^xsd:string
-    ; xhtemp:hasConcordType <subjConType> .
+    ; cao:hasConcordType <subjConType> .
 
 <zonyoka> a toct:UnimorphicAffix
     ; toct:hasValue "zokunyuka"^^xsd:string .
@@ -536,12 +535,9 @@
 
 
 
+<nounClass15Type> a ncs:Class15 .
+<nounClass7Type> a ncs:Class7 .
 
-<posNounType> a xhtemp:LocativeNoun .
-<posLocNounType> a xhtemp:LocativeNoun .
-<nounClass15Type> a xhtemp:NounClass15 .
-<nounClass7Type> a xhtemp:NounClass7 .
-
-<relConType> a xhtemp:RelativeConcord .
-<negSubjConType> a xhtemp:NegativeSubjectivalConcord .
-<subjConType> a xhtemp:SubjectivalConcord .
+<relConType> a cao:RelativeConcord .
+<negSubjConType> a cao:NegativeSubjectivalConcord .
+<subjConType> a cao:SubjectivalConcord .

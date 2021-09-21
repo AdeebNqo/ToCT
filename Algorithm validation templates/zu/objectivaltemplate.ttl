@@ -6,8 +6,8 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntologyZu#> .
 
 <verbObjSubjTemplate> a toct:Template
 	; toct:supportsLanguage <cpt_zulu>
@@ -33,7 +33,7 @@
 
 <subj> a toct:Concord
 	; co:index "1"^^xsd:positiveInteger
-	; zutemp:hasConcordType <subjConType>
+	; zucao:hasConcordType <subjConType>
 	; toct:hasLabel "Subj"^^xsd:string
 	; co:nextItem <ya> .
 
@@ -44,7 +44,7 @@
 
 <obj> a toct:Concord
 	; co:index "3"^^xsd:positiveInteger
-	; zutemp:hasConcordType <objConType>
+	; zucao:hasConcordType <objConType>
 	; toct:hasLabel "Obj"^^xsd:string
 	; co:nextItem <walkroot> .
 
@@ -61,6 +61,6 @@
 	; co:index "3"^^xsd:positiveInteger
 	; toct:hasLabel "noun2"^^xsd:string .
 
-<subjConType> a zutemp:SubjectivalConcord .
+<subjConType> a cao:SubjectivalConcord .
 
-<objConType> a zutemp:ObjectivalConcord .
+<objConType> a cao:ObjectivalConcord .

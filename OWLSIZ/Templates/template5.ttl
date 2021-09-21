@@ -1,68 +1,68 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
 @prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <templ5> a toct:Template
     ; toct:supportsLanguage <translZu>
-    ; co:firstItem <ayikho>
-    ; co:lastItem <qmark>
-    ; co:item <yini>, <c1>, <c2poly> .
+    ; toct:hasFirstPart <ayikho>
+    ; toct:hasLastPart  <qmark>
+    ; toct:hasPart <yini>, <c1>, <c2poly> .
 
 <translZu> a mola:Dialect
     ; mola:isFamily <isiZulu> .
 
 <ayikho> a toct:PolymorphicWord
     ; toct:reliesOn <c1>
-    ; co:firstItem <a>
-    ; co:lastItem <kho>
-    ; co:item <subjC>
-    ; co:nextItem <yini> .
+    ; toct:hasFirstPart <a>
+    ; toct:hasLastPart  <kho>
+    ; toct:hasPart <subjC>
+    ; toct:hasNextPart <yini> .
 
 <a> a toct:UnimorphicAffix
     ; toct:hasValue "a"^^xsd:string
-    ; co:nextItem <subjC> .
+    ; toct:hasNextPart <subjC> .
 
 <subjC> a toct:Concord
-    ; zutemp:hasConcordType <subjCConType>
+    ; cao:hasConcordType <subjCConType>
     ; toct:hasLabel "subjCon"^^xsd:string
-    ; co:nextItem <kho> .
+    ; toct:hasNextPart <kho> .
 
 <kho> a toct:UnimorphicAffix
     ; toct:hasValue "kho"^^xsd:string .
 
 <yini> a toct:UnimorphicWord
     ; toct:hasValue "yini"^^xsd:string
-    ; co:nextItem <c1> .
+    ; toct:hasNextPart <c1> .
 
 <c1> a toct:Slot
     ; toct:hasLabel "C1"^^xsd:string
-    ; co:nextItem <c2poly> .
+    ; toct:hasNextPart <c2poly> .
 
 <c2poly> a toct:PolymorphicWord
     ; toct:reliesOn <c1>
-    ; co:firstItem <relC>
-    ; co:lastItem <c2>
-    ; co:item <cop> .
+    ; toct:hasFirstPart <relC>
+    ; toct:hasLastPart  <c2>
+    ; toct:hasPart <cop> .
 
 <relC> a toct:Concord
     ; toct:hasLabel "relCon"^^xsd:string
-    ; zutemp:hasConcordType <relConType>
-    ; co:nextItem <cop> .
+    ; cao:hasConcordType <relConType>
+    ; toct:hasNextPart <cop> .
 
 <cop> a toct:Copula
     ; toct:hasLabel "COP"^^xsd:string
-    ; co:nextItem <c2> .
+    ; toct:hasNextPart <c2> .
 
 <c2> a toct:Slot
     ; toct:hasLabel "C2"^^xsd:string
-    ; co:nextItem <qmark> .
+    ; toct:hasNextPart <qmark> .
 
 <qmark> a toct:Punctuation
     ; toct:hasValue "?"^^xsd:string .
 
-<subjCConType> a zutemp:SubjectivalConcord .
+<subjCConType> a cao:SubjectivalConcord .
 
-<relConType> a zutemp:RelativeConcord .
+<relConType> a cao:RelativeConcord .

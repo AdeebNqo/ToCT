@@ -6,8 +6,8 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <verbObjSubjTemplate> a toct:Template
 	; toct:supportsLanguage <cpt_xhosa>
@@ -34,7 +34,7 @@
 
 <subj> a toct:Concord
 	; co:index "1"^^xsd:positiveInteger
-	; xhtemp:hasConcordType <subjConType>
+	; cao:hasConcordType <subjConType>
 	; toct:hasLabel "Subj"^^xsd:string
 	; toct:dependsOn <noun1Slot>
 	; co:nextItem <ya> .
@@ -46,7 +46,7 @@
 
 <obj> a toct:Concord
 	; co:index "3"^^xsd:positiveInteger
-	; xhtemp:hasConcordType <objConType>
+	; cao:hasConcordType <objConType>
 	; toct:hasLabel "Obj"^^xsd:string
 	; toct:dependsOn <noun2Slot>
 	; co:nextItem <walkroot> .
@@ -64,8 +64,6 @@
 	; co:index "3"^^xsd:positiveInteger
 	; toct:hasLabel "noun2"^^xsd:string .
 
-<subjConType> a xhtemp:SubjectivalConcord .
+<subjConType> a cao:SubjectivalConcord .
 
-<objConType> a xhtemp:ObjectivalConcord .
-
-<posNounType> a xhtemp:Noun .
+<objConType> a cao:ObjectivalConcord .

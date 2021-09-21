@@ -21,6 +21,7 @@
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zola Mahlaza</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A task ontology for the creation of morphologicaly-rich templates</terms:description>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toct</vann:preferredNamespacePrefix>
+        <owl:versionInfo>v1.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -34,23 +35,6 @@
      -->
 
     
-
-
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item -->
-
-    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf -->
-
-    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
 
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#controlledBy -->
 
@@ -108,11 +92,68 @@
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasFirstPart -->
 
-    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember">
-        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#item"/>
-        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasFirstPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/firstItem"/>
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
+        <rdfs:comment>A portion-object relation that specifies that the portion is positioned at the end or last position of the whole</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasLastPart -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasLastPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/lastItem"/>
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
+        <rdfs:comment>A portion-object relation that specifies that the portion is positioned at the front or first position</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasNextPart -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasNextPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/nextItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/item"/>
+        <owl:inverseOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
+        <rdfs:comment>A portion-object relation that specifies that the portions make up the whole</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPrevPart -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPrevPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/previousItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#isFirstPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#isFirstPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/firstItemOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
+        <rdfs:comment>The inverse of the portion-object relation that specifies that a portion also makes up the whole and is at the front or first position</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#isLastPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#isLastPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/lastItemOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
+        <rdfs:comment>The inverse of the portion-object relation that specifies that a portion also makes up the whole and is at the end or last position</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -120,39 +161,39 @@
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#labeledWith -->
 
     <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#labeledWith">
-        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+        <rdfs:domain rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplateFragment"/>
         <rdfs:range rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PropertyClass"/>
         <rdfs:comment xml:lang="en">Relation that specifies the linguistic properties of a template/word portion</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf -->
 
-    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf">
-        <rdfs:subPropertyOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#itemOf"/>
+    <owl:ObjectProperty rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/co/itemOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
-                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplateFragment"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
-                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordFragment"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixCombination"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">A type of member/collection meronymic relation where (1) the collection is ordered, (2) the member andcollection are non-agentive social objects, and (3) the  collection is essentially dependent on the member</rdfs:comment>
+        <rdfs:comment xml:lang="en">The inverse of the portion-object relation that specifies that a portion also makes up the whole</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -253,7 +294,7 @@
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Punctuation"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space"/>
                     <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
-                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+                    <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordFragment"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -273,31 +314,18 @@
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List -->
-
-    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
-    
-
-
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem -->
-
-    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
-    
-
-
     <!-- https://ontology.londisizwe.org/mola#Language -->
 
     <owl:Class rdf:about="https://ontology.londisizwe.org/mola#Language"/>
     
-
 
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix -->
 
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
-                <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
+                <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixCombination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -310,19 +338,19 @@
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixCombination -->
 
-    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk">
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixCombination">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root"/>
-        <rdfs:comment xml:lang="en">An affix chunk is a sequence of affixes</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affix chunk</rdfs:label>
+        <rdfs:comment xml:lang="en">An affix combination is a sequence of affixes</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affix combination</rdfs:label>
     </owl:Class>
     
 
@@ -347,10 +375,10 @@
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase -->
 
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Phrase">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
             </owl:Restriction>
@@ -364,18 +392,18 @@
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord -->
 
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion"/>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordFragment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord"/>
@@ -414,13 +442,13 @@
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -440,26 +468,26 @@
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template -->
 
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#List"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Slot"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasMember"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#hasPart"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion"/>
+                <owl:onClass rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplateFragment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A template is a sequence of ordered words, slots, spaces, and punctuation</rdfs:comment>
@@ -468,13 +496,13 @@
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplateFragment -->
 
-    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplatePortion">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#TemplateFragment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -484,7 +512,7 @@
             <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Space"/>
             <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word"/>
         </owl:disjointUnionOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Template portion</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Template fragment</rdfs:label>
     </owl:Class>
     
 
@@ -501,7 +529,7 @@
     <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord -->
 
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#UnimorphicWord">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
         <rdfs:comment xml:lang="en">A unimorphic word is a sign with a single written representation</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimorphic word</rdfs:label>
     </owl:Class>
@@ -513,7 +541,7 @@
     <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Word">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -527,22 +555,22 @@
     
 
 
-    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion -->
+    <!-- https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordFragment -->
 
-    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordPortion">
-        <rdfs:subClassOf rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#ListItem"/>
+    <owl:Class rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#WordFragment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/co/ListItem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#memberOf"/>
+                <owl:onProperty rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#partOf"/>
                 <owl:someValuesFrom rdf:resource="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#PolymorphicWord"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Affix"/>
-            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixChunk"/>
+            <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#AffixCombination"/>
             <rdf:Description rdf:about="https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#Root"/>
         </owl:disjointUnionOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word portion</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word fragment</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

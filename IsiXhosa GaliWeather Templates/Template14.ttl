@@ -1,15 +1,16 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+@prefix ncs: <http://www.meteck.org/files/ontologies/ncs#> .
 
 <temp7Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <qondo1>, <tempSlot>, <kwaye>, <xesha>, <comma>, <kodwa>, <temp>, <norVariationSlot>
-    ; co:firstItem <qondo1>
-    ; co:lastItem <norVariationSlot> .
+    ; toct:hasPart <qondo1>, <tempSlot>, <kwaye>, <xesha>, <comma>, <kodwa>, <temp>, <norVariationSlot>
+    ; toct:hasFirstPart <qondo1>
+    ; toct:hasLastPart <norVariationSlot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -17,51 +18,48 @@
 <qondo1> a toct:UnimorphicWord
     ; toct:hasValue "Amaqondo"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <shushukakhulu>
+    ; toct:hasNextPart <shushukakhulu>
     ; toct:controls <i>
-    ; xhtemp:hasPOS <posNounType>
-    ; xhtemp:hasNounClass <nounClass6Type> .
+    ; ncs:hasNounClass <nounClass6Type> .
 
 <shushukakhulu> a toct:Phrase
     ; toct:hasValue "obushushu azakuba"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <tempSlot> .
+    ; toct:hasNextPart <tempSlot> .
 
 <tempSlot> a toct:Slot
     ; toct:hasLabel "norT"^^xsd:string
     ; toct:reliesOn <qondo1>
     ; co:index "3"^^xsd:positiveInteger
-    ; co:nextItem <xesha> .
+    ; toct:hasNextPart <xesha> .
 
 <xesha> a toct:Phrase
     ; toct:hasValue "ngelixesha enyakeni"^^xsd:string
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <comma> .
+    ; toct:hasNextPart <comma> .
 
 <comma> a toct:Punctuation
     ; toct:hasValue ", "^^xsd:string
     ; co:index "5"^^xsd:positiveInteger
-    ; co:nextItem <kodwa> .
+    ; toct:hasNextPart <kodwa> .
 
 <kodwa> a toct:Phrase
     ; toct:hasValue "kodwa ndawo yonke"^^xsd:string
     ; co:index "6"^^xsd:positiveInteger
-    ; co:nextItem <temp> .
+    ; toct:hasNextPart <temp> .
 
 <temp> a toct:UnimorphicWord
     ; toct:hasValue "itemprisha"^^xsd:string
     ; co:index "7"^^xsd:positiveInteger
-    ; co:nextItem <norVariationSlot>
+    ; toct:hasNextPart <norVariationSlot>
     ; toct:controls <azi>
     ; toct:controls <i>
-    ; xhtemp:hasPOS <posNounType>
-    ; xhtemp:hasNounClass <nounClass9Type> .
+    ; ncs:hasNounClass <nounClass9Type> .
 
 <norVariationSlot> a toct:Slot
     ; toct:hasLabel "norV"
     ; toct:reliesOn <temp>
     ; co:index "8"^^xsd:positiveInteger .
 
-<posNounType> a xhtemp:Noun .
-<nounClass9Type> a xhtemp:NounClass9 .
-<nounClass6Type> a xhtemp:NounClass6 .
+<nounClass9Type> a ncs:Class9 .
+<nounClass6Type> a ncs:Class6 .

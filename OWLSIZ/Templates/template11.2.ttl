@@ -1,51 +1,51 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
 @prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <templ11.2> a toct:Template
     ; toct:supportsLanguage <translZu>
-    ; co:firstItem <op>
-    ; co:lastItem <qmark>
-    ; co:item <c>, <npoly>, <ncama> .
+    ; toct:hasFirstPart <op>
+    ; toct:hasLastPart  <qmark>
+    ; toct:hasPart <c>, <npoly>, <ncama> .
 
 <translZu> a mola:Dialect
     ; mola:isFamily <isiZulu> .
 
 <op> a toct:Slot
     ; toct:hasLabel "OP"^^xsd:string
-    ; co:nextItem <c> .
+    ; toct:hasNextPart <c> .
 
 <c> a toct:Slot
     ; toct:hasLabel "C"^^xsd:string
-    ; co:nextItem <npoly> .
+    ; toct:hasNextPart <npoly> .
 
 <npoly> a toct:PolymorphicWord
     ; toct:reliesOn <c>
-    ; co:firstItem <relC>
-    ; co:lastItem <n>
-    ; co:item <yi>
-    ; co:nextItem <ncama> .
+    ; toct:hasFirstPart <relC>
+    ; toct:hasLastPart  <n>
+    ; toct:hasPart <yi>
+    ; toct:hasNextPart <ncama> .
 
 <relC> a toct:Concord
-    ; zutemp:hasConcordType <relConType>
+    ; cao:hasConcordType <relConType>
     ; toct:hasLabel "relCon"^^xsd:string
-    ; co:nextItem <yi> .
+    ; toct:hasNextPart <yi> .
 
 <yi> a toct:UnimorphicAffix
     ; toct:hasValue "yi-"^^xsd:string
-    ; co:nextItem <n> .
+    ; toct:hasNextPart <n> .
 
 <n> a toct:Slot
     ; toct:hasLabel "N"^^xsd:string .
 
 <ncama> a toct:UnimorphicWord
     ; toct:hasValue "ngqo"^^xsd:string
-    ; co:nextItem <qmark> .
+    ; toct:hasNextPart <qmark> .
 
 <qmark> a toct:Punctuation
     ; toct:hasValue "?"^^xsd:string .
 
-<relConType> a zutemp:RelativeConcord .
+<relConType> a cao:RelativeConcord .

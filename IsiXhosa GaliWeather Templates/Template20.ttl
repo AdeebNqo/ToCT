@@ -1,15 +1,15 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
 
 <wind1Template> a toct:Template
-    ; co:item <moya>, <wind>
+    ; toct:hasPart <moya>, <wind>
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:firstItem <linda>
-    ; co:lastItem <timeSlot> .
+    ; toct:hasFirstPart <linda>
+    ; toct:hasLastPart <timeSlot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -17,23 +17,23 @@
 <linda> a toct:UnimorphicWord
     ; toct:hasValue "Silindele"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger 
-    ; co:nextItem <moya> .
+    ; toct:hasNextPart <moya> .
 
 <moya> a toct:UnimorphicWord
     ; toct:hasValue "umoya"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <wind>.
+    ; toct:hasNextPart <wind>.
 
 <wind> a toct:PolymorphicWord
     ; co:index "3"^^xsd:positiveInteger
-    ; co:firstItem <na>
-    ; co:lastItem <windSlot> 
-    ; co:nextItem <timeSlot>.
+    ; toct:hasFirstPart <na>
+    ; toct:hasLastPart <windSlot> 
+    ; toct:hasNextPart <timeSlot>.
 
 <na> a toct:UnimorphicAffix
     ; toct:hasValue "ona"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <windSlot> .
+    ; toct:hasNextPart <windSlot> .
 
 <windSlot> a toct:Slot
     ; toct:hasLabel "w1"^^xsd:string

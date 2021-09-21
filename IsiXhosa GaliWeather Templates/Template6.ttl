@@ -1,15 +1,15 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
 
 <cloudc2Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <linda>, <coverage1Slot>, <coverage2>, <ntsuku>, <comma1>, <ngona>, <bakho>, <coverage3Slot>
-    ; co:firstItem <linda>
-    ; co:lastItem <coverage3Slot> .
+    ; toct:hasPart <linda>, <coverage1Slot>, <coverage2>, <ntsuku>, <comma1>, <ngona>, <bakho>, <coverage3Slot>
+    ; toct:hasFirstPart <linda>
+    ; toct:hasLastPart <coverage3Slot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -17,24 +17,24 @@
 <linda> a toct:Phrase
     ; toct:hasValue "Silindele utshintsho-ntsitshwano lwezulu"
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <coverage1Slot> .
+    ; toct:hasNextPart <coverage1Slot> .
 
 <coverage1Slot> a toct:Slot
     ; toct:hasLabel "rel1"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <coverage2> .
+    ; toct:hasNextPart <coverage2> .
 
 <coverage2> a toct:PolymorphicWord
     ; co:index "3"^^xsd:positiveInteger
-    ; co:item <ne>, <coverage2Slot>
-    ; co:firstItem <ne>
-    ; co:lastItem <coverage2Slot>
-    ; co:nextItem <ntsuku> .
+    ; toct:hasPart <ne>, <coverage2Slot>
+    ; toct:hasFirstPart <ne>
+    ; toct:hasLastPart <coverage2Slot>
+    ; toct:hasNextPart <ntsuku> .
 
 <ne> a toct:UnimorphicAffix
     ; toct:hasValue "ne"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <coverage2Slot> .
+    ; toct:hasNextPart <coverage2Slot> .
 
 <coverage2Slot> a toct:Slot
     ; toct:hasLabel "rel2"^^xsd:string
@@ -43,22 +43,22 @@
 <ntsuku> a toct:Phrase
     ; toct:hasValue "kwezintsuku zizayo"
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <comma1> .
+    ; toct:hasNextPart <comma1> .
 
 <comma1> a toct:Punctuation
     ; toct:hasValue ", "^^xsd:string
     ; co:index "5"^^xsd:positiveInteger
-    ; co:nextItem <ngona> .
+    ; toct:hasNextPart <ngona> .
 
 <ngona> a toct:Phrase
     ; toct:hasValue "nangona emaxesheni athile"
     ; co:index "6"^^xsd:positiveInteger
-    ; co:nextItem <bakho> .
+    ; toct:hasNextPart <bakho> .
 
 <bakho> a toct:Phrase
     ; toct:hasValue "kuzakubakho izulu"^^xsd:string
     ; co:index "8"^^xsd:positiveInteger
-    ; co:nextItem <coverage3Slot> .
+    ; toct:hasNextPart <coverage3Slot> .
 
 <coverage3Slot> a toct:Slot
     ; toct:hasLabel "rel3"^^xsd:string

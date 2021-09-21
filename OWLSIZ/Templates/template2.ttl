@@ -1,47 +1,47 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/> .
 @prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zutemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/ZuTemplateAnnotationOntology#> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
 
 <templ2> a toct:Template
     ; toct:supportsLanguage <translZu>
-    ; co:firstItem <ingabe>
-    ; co:lastItem <qmark>
-    ; co:item <i>, <c2poly> .
+    ; toct:hasFirstPart <ingabe>
+    ; toct:hasLastPart  <qmark>
+    ; toct:hasPart <i>, <c2poly> .
 
 <translZu> a mola:Dialect
     ; mola:isFamily <isiZulu> .
 
 <ingabe> a toct:UnimorphicWord
     ; toct:hasValue "Ingabe"^^xsd:string
-    ; co:nextItem <i> .
+    ; toct:hasNextPart <i> .
 
 <i> a toct:Slot
     ; toct:hasLabel "I"^^xsd:string
-    ; co:nextItem <c2poly> .
+    ; toct:hasNextPart <c2poly> .
 
 <c2poly> a toct:PolymorphicWord
     ; toct:reliesOn <i>
-    ; co:firstItem <subjC>
-    ; co:lastItem <c2>
-    ; co:item <cop> .
+    ; toct:hasFirstPart <subjC>
+    ; toct:hasLastPart  <c2>
+    ; toct:hasPart <cop> .
 
 <subjC> a toct:Concord
     ; toct:hasLabel "subjCon"^^xsd:string
-    ; zutemp:hasConcordType <subjConType>
-    ; co:nextItem <cop> .
+    ; cao:hasConcordType <subjConType>
+    ; toct:hasNextPart <cop> .
 
 <cop> a toct:Copula
     ; toct:hasLabel "COP"^^xsd:String
-    ; co:nextItem <c2> .
+    ; toct:hasNextPart <c2> .
 
 <c2> a toct:Slot
     ; toct:hasLabel "C"^^xsd:string
-    ; co:nextItem <qmark> .
+    ; toct:hasNextPart <qmark> .
 
 <qmark> a toct:Punctuation
     ; toct:hasValue "?"^^xsd:string .
 
-<subjConType> a zutemp:SubjectivalConcord .
+<subjConType> a cao:SubjectivalConcord .

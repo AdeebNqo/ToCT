@@ -1,0 +1,9 @@
+Template15:
+	tempSlot
+		phezulukakhulu =
+		phantsikhulu = 
+		buphezulu = 
+		buphantsi = 
+		buqhelekile = 
+	oscilationSlot
+		izakunyukaisihla = 

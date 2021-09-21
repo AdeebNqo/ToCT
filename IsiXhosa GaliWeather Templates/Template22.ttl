@@ -1,16 +1,16 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
 
 
 <wind3Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <wind3>, <suka>, <time4Slot>, <change>, <wind4>
-    ; co:firstItem <lindele>
-    ; co:lastItem <time5Slot> .
+    ; toct:hasPart <wind3>, <suka>, <time4Slot>, <change>, <wind4>
+    ; toct:hasFirstPart <lindele>
+    ; toct:hasLastPart <time5Slot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -18,19 +18,19 @@
 <lindele> a toct:Phrase
     ; toct:hasValue "Silindele imimoya ezakuba"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:firstItem <wind3Slot>
-    ; co:nextItem <wind3> .
+    ; toct:hasFirstPart <wind3Slot>
+    ; toct:hasNextPart <wind3> .
 
 <wind3> a toct:PolymorphicWord
     ; co:index "2"^^xsd:positiveInteger
-    ; co:firstItem <na1>
-    ; co:lastItem <wind3Slot>
-    ; co:nextItem <suka> .
+    ; toct:hasFirstPart <na1>
+    ; toct:hasLastPart <wind3Slot>
+    ; toct:hasNextPart <suka> .
 
 <na1> a toct:UnimorphicAffix
     ; toct:hasValue "na"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <wind3Slot> .
+    ; toct:hasNextPart <wind3Slot> .
 
 <wind3Slot> a toct:Slot
     ; toct:hasLabel "w3"^^xsd:string
@@ -39,33 +39,33 @@
 <suka> a toct:UnimorphicWord
     ; toct:hasValue "ukuqala"^^xsd:string
     ; co:index "3"^^xsd:positiveInteger
-    ; co:nextItem <time4Slot> .
+    ; toct:hasNextPart <time4Slot> .
 
 <time4Slot> a toct:Slot
     ; toct:hasLabel "t4"^^xsd:positiveInteger
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <comma> .
+    ; toct:hasNextPart <comma> .
 
 <comma> a toct:Punctuation
     ; toct:hasValue ", "^^xsd:string
     ; co:index "5"^^xsd:positiveIntegr
-    ; co:nextItem <change> .
+    ; toct:hasNextPart <change> .
 
 <change> a toct:Phrase
     ; toct:hasValue "itshintse ibe"^^xsd:string
     ; co:index "6"^^xsd:positiveInteger
-    ; co:nextItem <wind4> .
+    ; toct:hasNextPart <wind4> .
 
 <wind4> a toct:PolymorphicWord
     ; co:index "7"^^xsd:positiveInteger
-    ; co:item <na>, <wind4Slot>
-    ; co:firstItem <na2>
-    ; co:lastItem <wind4Slot> .
+    ; toct:hasPart <na>, <wind4Slot>
+    ; toct:hasFirstPart <na2>
+    ; toct:hasLastPart <wind4Slot> .
 
 <na2> a toct:UnimorphicAffix
     ; toct:hasValue "na"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <wind4Slot> .
+    ; toct:hasNextPart <wind4Slot> .
 
 <wind4Slot> a toct:Slot
     ; toct:hasLabel "w4"^^xsd:string

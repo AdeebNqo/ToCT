@@ -1,16 +1,16 @@
 @base <http://people.cs.uct.ac.za/~zmahlaza/templates/galiweather/> .
-@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/GeneralizedBareTemplateModel#> .
+@prefix toct: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/ToCT#> .
 @prefix mola: <https://ontology.londisizwe.org/mola#> .
-@prefix co: <http://purl.org/co#> .
+@prefix co: <http://purl.org/co/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
-
+@prefix ncs: <http://www.meteck.org/files/ontologies/ncs#> .
 
 <temp6Template> a toct:Template
     ; toct:supportsLanguage <cpt_xhosa>
-    ; co:item <qondo1>, <phantsi>, <minimumTempSlot>, <kwaye>,  <qondo2>, <phezulu>, <maximumTempSlot>, <thelekiswa>, <comma>, <ngona>, <qondo3>, <maxOscilationSlot>
-    ; co:firstItem <qondo1>
-    ; co:lastItem <maxOscilationSlot> .
+    ; toct:hasPart <qondo1>, <phantsi>, <minimumTempSlot>, <kwaye>,  <qondo2>, <phezulu>, <maximumTempSlot>, <thelekiswa>, <comma>, <ngona>, <qondo3>, <maxOscilationSlot>
+    ; toct:hasFirstPart <qondo1>
+    ; toct:hasLastPart <maxOscilationSlot> .
 
 <cpt_xhosa> a mola:Dialect
     ; mola:isFamily <isiXhosa> .
@@ -18,75 +18,71 @@
 <qondo1> a toct:UnimorphicWord
     ; toct:hasValue "Iqondo"^^xsd:string
     ; co:index "1"^^xsd:positiveInteger
-    ; co:nextItem <phantsi>
+    ; toct:hasNextPart <phantsi>
     ; toct:controls <i>
-    ; xhtemp:hasPOS <posNounType>
-    ; xhtemp:hasNounClass <nounClass5Type> .
+    ; ncs:hasNounClass <nounClass5Type> .
 
 <phantsi> a toct:Phrase
     ; toct:hasValue "eliphantsi lemozulu"^^xsd:string
     ; co:index "2"^^xsd:positiveInteger
-    ; co:nextItem <minimumTempSlot> .
+    ; toct:hasNextPart <minimumTempSlot> .
 
 <minimumTempSlot> a toct:Slot
     ; toct:hasLabel "minT"^^xsd:string
     ; toct:reliesOn <qondo1>
     ; co:index "3"^^xsd:positiveInteger
-    ; co:nextItem <kwaye> .
+    ; toct:hasNextPart <kwaye> .
 
 <kwaye> a toct:UnimorphicWord
     ; toct:hasValue "kwaye"^^xsd:string
     ; co:index "4"^^xsd:positiveInteger
-    ; co:nextItem <qondo2> .
+    ; toct:hasNextPart <qondo2> .
 
 <qondo2> a toct:UnimorphicWord
     ; toct:hasValue "iqondo"^^xsd:string
     ; co:index "5"^^xsd:string
-    ; co:nextItem <phezulu>
+    ; toct:hasNextPart <phezulu>
     ; toct:controls <i>
-    ; xhtemp:hasPOS xhtemp:Noun
-    ; xhtemp:hasNounClass <nounClass5Type> .
+    ; ncs:hasNounClass <nounClass5Type> .
 
 <phezulu> a toct:UnimorphicWord
     ; toct:hasValue "eliphezulu"^^xsd:string
     ; co:index "6"^^xsd:positiveInteger
-    ; co:nextItem <maximumTempSlot> .
+    ; toct:hasNextPart <maximumTempSlot> .
 
 <maximumTempSlot> a toct:Slot
     ; toct:hasLabel "maxT"^^xsd:string
     ; toct:reliesOn <qondo2>
     ; co:index "7"^^xsd:positiveInteger
-    ; co:nextItem <thelekiswa> .
+    ; toct:hasNextPart <thelekiswa> .
 
 <thelekiswa> a toct:Phrase
     ; toct:hasValue "xa lithelekiswa nethemprisha elindelekileyo kwelixesha enyakeni"^^xsd:string
     ; co:index "8"^^xsd:positiveInteger
-    ; co:nextItem <comma> .
+    ; toct:hasNextPart <comma> .
 
 <comma> a toct:Punctuation
     ; toct:hasValue ", "^^xsd:string
     ; co:index "9"^^xsd:positiveInteger
-    ; co:nextItem <ngona> .
+    ; toct:hasNextPart <ngona> .
 
 <ngona> a toct:UnimorphicWord
     ; toct:hasValue "nangona"^^xsd:string
     ; co:index "10"^^xsd:positiveInteger
-    ; co:nextItem <qondo3> .
+    ; toct:hasNextPart <qondo3> .
 
 <qondo3> a toct:UnimorphicWord
     ; toct:hasValue "amaqondo"^^xsd:string
     ; co:index "11"^^xsd:positiveInteger
-    ; co:nextItem <maxOscilationSlot>
+    ; toct:hasNextPart <maxOscilationSlot>
     ; toct:controls <azi> 
     ; toct:controls <i>
-    ; xhtemp:hasPOS <posNounType>
-    ; xhtemp:hasNounClass <nounClass6Type> .
+    ; ncs:hasNounClass <nounClass6Type> .
 
 <maxOscilationSlot> a toct:Slot
     ; toct:hasLabel "max0"^^xsd:string
     ; toct:reliesOn <qondo3>
     ; co:index "12"^^xsd:positiveInteger .
 
-<posNounType> a xhtemp:Noun .
-<nounClass6Type> a xhtemp:NounClass6 .
-<nounClass5Type> a xhtemp:NounClass5 .
+<nounClass6Type> a ncs:Class6 .
+<nounClass5Type> a ncs:Class5 .

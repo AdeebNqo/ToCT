@@ -6,13 +6,13 @@
 @prefix  xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix  co: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/CO#> .
-@prefix xhtemp: <https://people.cs.uct.ac.za/~zmahlaza/ontologies/templates/XhTemplateAnnotationOntology#> .
+@prefix  co: <http://purl.org/co/> .
+@prefix cao: <http://people.cs.uct.ac.za/~zmahlaza/ontologies/ConcordAnnotationOntology#> .
+@prefix ncs: <http://www.meteck.org/files/ontologies/ncs#> .
 
 <noun1> a toct:UnimorphicWord
     ; toct:hasValue "izinja"^^xsd:string
-    ; xhtemp:hasPOS xhtemp:Noun
-    ; xhtemp:hasNounClass <nounClass10Type>
+    ; ncs:hasNounClass <nounClass10Type>
     ; toct:fillsIn <noun1Slot>
     ; toct:controls <LAdjC>
     ; toct:controls <subj>
@@ -23,8 +23,7 @@
 
 <noun2> a toct:UnimorphicWord
     ; toct:hasValue "abantu"^^xsd:string
-    ; xhtemp:hasPOS xhtemp:Noun
-    ; xhtemp:hasNounClass <nounClass2Type>
+    ; ncs:hasNounClass <nounClass2Type>
     ; toct:fillsIn <noun2Slot>
     ; toct:fillsIn <noun3Slot>
     ; toct:controls <enumConc>
@@ -32,6 +31,6 @@
     ; toct:controls <SAdjC>
     ; toct:controls <phiconc> .
 
-<nounClass2Type> a xhtemp:NounClass2 .
+<nounClass2Type> a ncs:Class2 .
 
-<nounClass10Type> a xhtemp:NounClass10 .
+<nounClass10Type> a ncs:Class10 .
