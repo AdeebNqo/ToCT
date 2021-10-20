@@ -1,5 +1,8 @@
 package za.co.mahlaza.research.owlsiz;
 
+import org.apache.commons.configuration2.Configuration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import uk.ac.manchester.cs.owl.owlapi.*;
@@ -39,26 +42,45 @@ public class OntologyVerbaliser {
     private static TemplateLinearizer linearizer;
     private static SurfaceRealiser surfaceRealiser;
 
+
+    private static Configurations configs = new Configurations();
+
+
+    static String ontologyToBeVerbalisedLoc;
+    static String outputFile;
+
+    static String baseFilePath;
+    static String nounClassFileFromKeet;
+    static String toctOntologyLoc;
+    static String baseURI;
+
     public static void main(String[] args) {
 
         try {
-            String ontologyToBeVerbalisedLoc = "/home/zola/Documents/ToCT Ontology and Code/OWLSIZ/Other resources/testOntoisiZuluWithPW.owl"; //TODO: add path
+
+            Configuration config = configs.properties(new File("res/config.properties"));
+            ontologyToBeVerbalisedLoc = config.getString("user.inputontology.path");
+            outputFile = config.getString("user.outputfile.path");
+
+            baseFilePath = config.getString("system.templates.path");
+            nounClassFileFromKeet = config.getString("system.nounclassfile.path");
+            toctOntologyLoc = config.getString("system.ontology.toct.path");
+            baseURI = config.getString("system.templates.uri");
+
             File file = new File(ontologyToBeVerbalisedLoc);
 
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
             OWLOntology zuOntology = manager.loadOntologyFromOntologyDocument(file);
 
             //language-specific
-            String nounClassFileFromKeet = "/home/zola/Documents/ToCT Ontology and Code/OWLSIZ/Other resources/nncPairs-fixed.txt"; //TODO: add path
             nounClassResolver = new ZuluNounClassResolver(nounClassFileFromKeet);
             linearizer = getIsiZuluTemplateLineariser();
             linearizer.enableDebugging();
+
             surfaceRealiser = new SurfaceRealiser(linearizer);
 
             //error detector
-            String toctOntologyLoc = "/home/zola/Documents/ToCT Ontology and Code/ToCT/ToCT.owl";
             TemplateErrorDetector logicalErrDetector = new TemplateErrorDetector(toctOntologyLoc);
-
 
             Stream<OWLLogicalAxiom> axiomStream = zuOntology.getLogicalAxioms().stream();
             List<String> verbalisations = axiomStream.map(axiom -> {
@@ -69,14 +91,14 @@ public class OntologyVerbaliser {
                     Triple tup = selectStructure(axiom);
 
                     //error detection
-                    //TemplateValidationReport report = logicalErrDetector.getConsistencyReport(tup.getTemplateFilePath());
+                    TemplateValidationReport report = logicalErrDetector.getConsistencyReport(tup.getTemplateFilePath());
 
                     //surface realisation
-                    //if (!report.isInconsistent()) {
+                    if (!report.isInconsistent()) {
                         generatedText = surfaceRealiser.generateText(tup.getSlotFillers(), tup.getTemplate());
-                    //} else {
-                    //    System.out.println(report.toString());
-                    //}
+                    } else {
+                        System.out.println(report.toString());
+                    }
 
                     return generatedText;
                 }
@@ -89,13 +111,14 @@ public class OntologyVerbaliser {
                 }
             }).collect(Collectors.toList());
 
-            String outputFile = "/tmp/output.tsv"; //TODO: add path
             saveToFile(outputFile, verbalisations);
         }
         catch (OWLOntologyCreationException e ) {
             e.printStackTrace();
         }
-
+        catch (ConfigurationException e) {
+            e.printStackTrace();
+        }
     }
 
     public static TemplateLinearizer getIsiZuluTemplateLineariser() {
@@ -116,8 +139,6 @@ public class OntologyVerbaliser {
     }
 
     public static Triple selectStructure(OWLLogicalAxiom classAxiom) throws UnsupportedAxiomException {
-        String baseFilePath = "/home/zola/Documents/ToCT Ontology and Code/OWLSIZ/Templates/"; //TODO: add path
-        String baseURI = "http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/";
         Template template = null;
 
         TTLSlotValues SV = null;
@@ -443,8 +464,6 @@ public class OntologyVerbaliser {
     }
 
     public static String selectStructure(OWLClassExpression classExpression) throws UnsupportedAxiomException {
-        String baseFilePath = "/home/zola/Documents/ToCT Ontology and Code/OWLSIZ/Templates/";
-        String baseURI = "http://people.cs.uct.ac.za/~zmahlaza/templates/owlsiz/";
         Template template = null;
         TTLSlotValues SV = null;
 

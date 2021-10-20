@@ -10,5 +10,7 @@
     <orderEntry type="library" name="GITemplateParsing" level="project" />
     <orderEntry type="library" name="GrammarEngineNguni" level="project" />
     <orderEntry type="library" name="TemplErrorDetection" level="project" />
+    <orderEntry type="library" name="apache.commons.configuration2" level="project" />
+    <orderEntry type="library" name="commons.beanutils" level="project" />
   </component>
 </module>
