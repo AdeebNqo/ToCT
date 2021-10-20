@@ -26,15 +26,24 @@ If Java complains about finding the FaCT++ JNI then you need to specify it. This
 However, if you need to use the logical error detection  module then you need to download the Fact++ JNI from https://bitbucket.org/dtsarkov/factplusplus/downloads/, create a folder called "FaCT++" alongside the Code, Other resources, and Templates folders. Then unzip the JNI in the newly created folder. After doing so, you should have the following mew folder: 
 
 1. FaCT++
-	1.1 FaCT++-linux-v1.6.5 (if you're using Linux ofcourse)
-		1.1.1 32bit
-			1.1.1.1 FaCT++
-			1.1.1.2 libfact.so
-			1.1.1.3 libFaCTPlusPlusJNI.so
-		1.1.2 64bit
-			1.1.2.1 FaCT++
-			1.1.2.2 libfact.so
-			1.1.2.3 libFaCTPlusPlusJNI.so
+	
+	1.1. FaCT++-linux-v1.6.5 (if you're using Linux ofcourse)
+	
+		1.1.1. 32bit
+	
+			1.1.1.1. FaCT++
+	
+			1.1.1.2. libfact.so
+	
+			1.1.1.3. libFaCTPlusPlusJNI.so
+	
+		1.1.2. 64bit
+	
+			1.1.2.1. FaCT++
+	
+			1.1.2.2. libfact.so
+	
+			1.1.2.3. libFaCTPlusPlusJNI.so
 
 # More details
 
