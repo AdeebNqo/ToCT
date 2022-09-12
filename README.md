@@ -54,7 +54,8 @@ CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Citing ToCT
 
-Mahlaza, Z., Keet, C.M. ToCT: A task ontology to manage complex templates. Online (submitted to an international conference)
+Mahlaza, Z., Keet, C.M. ToCT: A task ontology to manage complex templates. FOIS'21 Ontology Showcase, 13-16 September 2021, Bolzano, Italy. Sanfilippo, E.M. et al. (Eds.). CEUR-WS vol. 2969. 9p. http://ceur-ws.org/Vol-2969/paper40-FoisShowCase.pdf
+
 
 [![DOI](https://zenodo.org/badge/359607259.svg)](https://zenodo.org/badge/latestdoi/359607259)
 
